@@ -1,0 +1,147 @@
+
+body {
+	line-height: 29px;
+	font-size: 19px;
+}
+
+svg {
+	padding: 30px;
+}
+
+.color-and-types__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.color-and-types__colors {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;	
+}
+
+.color-block{
+	display: flex;
+	margin: 10px 20px 10px 0;	
+}
+.color-block__rectangle {
+	width: 70px;
+	height: 70px;
+	border-radius: 6px;
+}
+
+.color-block__text {
+	padding-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.color-block__title{
+	font-weight: bold;
+}
+.color-rectangle_dark-shade100 {
+	background-color: #1F2041;
+}
+
+.color-rectangle_dark-shade75 {
+	background-color: rgba(31, 32, 65, 0.75);
+}
+
+.color-rectangle_dark-shade50 {
+	background-color: rgba(31, 32, 65, 0.5);
+}
+
+.color-rectangle_dark-shade25 {
+	background-color: rgba(31, 32, 65, 0.25);
+}
+
+.color-rectangle_dark-shade5 {
+	background-color: rgba(31, 32, 65, 0.05);
+}
+
+.color-rectangle_purple {
+	background-color: #BC9CFF;
+}
+
+.color-rectangle_green {
+	background-color: #6FCF97;
+}
+
+
+.color-and-types__types {
+	display: flex;
+	flex-direction: column;
+	max-width: 403px;
+	max-height: 321px;
+	
+}
+
+.types-block {
+	display: flex;
+	margin: 10px 20px 10px 0;	
+}
+
+
+.color-and-types__text {
+	display: flex;
+	justify-content: flex-start;
+
+	
+}
+
+.color-and-types__headers  {
+color: rgba(31, 32, 65, 0.05);
+font-weight: normal;
+line-height: 29px;
+text-align: right;
+padding-right: 30px;
+
+
+}
+h1.types_header {
+	font-size: 24px;
+	line-height: 29px;
+}
+
+h2.types_header {
+	font-size: 19px;
+	line-height: 23px;
+}
+
+h3.types_header {
+	font-size: 12px;
+	line-height: 15px;
+}
+.types_header_body{
+	font-size: 14px;
+	line-height: 24px;
+}
+/*заголовок h1 сайта*/
+h1.heading {
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+color: #1F2041;
+}
+/*заголовок h2 сайта*/
+h2.heading { 
+font-weight: bold;
+font-size: 19px;
+line-height: 24px;
+color: #1F2041;
+}
+/*заголовок h3 сайта*/
+h3.heading { 
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+color: #1F2041;
+}
+
+/*основной текст сайта*/
+.text_body { 
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+
+}
+
