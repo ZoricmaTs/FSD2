@@ -1,7 +1,39 @@
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/montserrat-regular-webfont.ttf),
+		 url(../fonts/montserrat-regular-webfont.svg),
+		 url(../fonts/montserrat-regular-webfont.woff);
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/montserrat-bold-webfont.ttf),
+		 url(../fonts/montserrat-bold-webfont.svg),
+		 url(../fonts/montserrat-bold-webfont.woff);
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: Quicksand;
+	src: url(../fonts/quicksand-regular-webfont.ttf),
+		 url(../fonts/quicksand-regular-webfont.svg),
+		 url(../fonts/quicksand-regular-webfont.woff);
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: Quicksand;
+	src: url(../fonts/quicksand-bold-webfont.ttf),
+		 url(../fonts/quicksand-bold-webfont.svg),
+		 url(../fonts/quicksand-bold-webfont.woff);
+	font-style: normal;
+	font-weight: 600;
+}
 
 body {
-	line-height: 29px;
-	font-size: 19px;
+font-family: Quicksand;
+font-weight: 100;line-height: 29px;font-size: 19px;
 }
 
 svg {
@@ -36,7 +68,7 @@ svg {
 	justify-content: center;
 }
 .color-block__title{
-	font-weight: bold;
+	font-weight: 600;
 }
 .color-rectangle_dark-shade100 {
 	background-color: #1F2041;
@@ -72,7 +104,7 @@ svg {
 	flex-direction: column;
 	max-width: 403px;
 	max-height: 321px;
-	
+	font-family: Montserrat;
 }
 
 .types-block {
@@ -89,8 +121,11 @@ svg {
 }
 
 .color-and-types__headers  {
-color: rgba(31, 32, 65, 0.05);
-font-weight: normal;
+/*color: rgba(31, 32, 65, 0.05);*/
+color: red;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 100;
 line-height: 29px;
 text-align: right;
 padding-right: 30px;
@@ -117,24 +152,25 @@ h3.types_header {
 }
 /*заголовок h1 сайта*/
 h1.heading {
-font-weight: bold;
 font-size: 24px;
 line-height: 30px;
 color: #1F2041;
+font-weight: 600;
 }
 /*заголовок h2 сайта*/
 h2.heading { 
-font-weight: bold;
 font-size: 19px;
 line-height: 24px;
 color: #1F2041;
+font-weight: 600;
 }
 /*заголовок h3 сайта*/
 h3.heading { 
-font-weight: bold;
 font-size: 12px;
 line-height: 15px;
 color: #1F2041;
+text-transform: uppercase;
+font-weight: 600;
 }
 
 /*основной текст сайта*/
@@ -142,6 +178,6 @@ color: #1F2041;
 	font-size: 14px;
 	line-height: 24px;
 	color: rgba(31, 32, 65, 0.75);
-
+	font-weight: 100;
 }
 
