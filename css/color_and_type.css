@@ -4,7 +4,7 @@
 		 url(../fonts/montserrat-regular-webfont.svg),
 		 url(../fonts/montserrat-regular-webfont.woff);
 	font-style: normal;
-	font-weight: 100;
+	font-weight: 400;
 }
 @font-face {
 	font-family: Montserrat;
@@ -12,7 +12,7 @@
 		 url(../fonts/montserrat-bold-webfont.svg),
 		 url(../fonts/montserrat-bold-webfont.woff);
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 }
 @font-face {
 	font-family: Quicksand;
@@ -20,7 +20,7 @@
 		 url(../fonts/quicksand-regular-webfont.svg),
 		 url(../fonts/quicksand-regular-webfont.woff);
 	font-style: normal;
-	font-weight: 100;
+	font-weight: 400;
 }
 @font-face {
 	font-family: Quicksand;
@@ -28,12 +28,12 @@
 		 url(../fonts/quicksand-bold-webfont.svg),
 		 url(../fonts/quicksand-bold-webfont.woff);
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 body {
 font-family: Quicksand;
-font-weight: 100;line-height: 29px;font-size: 19px;
+font-weight: 400;line-height: 29px;font-size: 19px;
 }
 
 svg {
@@ -68,7 +68,7 @@ svg {
 	justify-content: center;
 }
 .color-block__title{
-	font-weight: 600;
+	font-weight: 700;
 }
 .color-rectangle_dark-shade100 {
 	background-color: #1F2041;
@@ -125,7 +125,7 @@ svg {
 color: red;
 font-family: Montserrat;
 font-style: normal;
-font-weight: 100;
+font-weight: 400;
 line-height: 29px;
 text-align: right;
 padding-right: 30px;
@@ -155,14 +155,14 @@ h1.heading {
 font-size: 24px;
 line-height: 30px;
 color: #1F2041;
-font-weight: 600;
+font-weight: 700;
 }
 /*заголовок h2 сайта*/
 h2.heading { 
 font-size: 19px;
 line-height: 24px;
 color: #1F2041;
-font-weight: 600;
+font-weight: 700;
 }
 /*заголовок h3 сайта*/
 h3.heading { 
@@ -170,7 +170,7 @@ font-size: 12px;
 line-height: 15px;
 color: #1F2041;
 text-transform: uppercase;
-font-weight: 600;
+font-weight: 700;
 }
 
 /*основной текст сайта*/
@@ -178,6 +178,6 @@ font-weight: 600;
 	font-size: 14px;
 	line-height: 24px;
 	color: rgba(31, 32, 65, 0.75);
-	font-weight: 100;
+	font-weight: 700;
 }
 
