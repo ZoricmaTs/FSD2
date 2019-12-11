@@ -1,0 +1,106 @@
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/montserrat-regular-webfont.ttf),
+		 url(../fonts/montserrat-regular-webfont.svg),
+		 url(../fonts/montserrat-regular-webfont.woff);
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/montserrat-bold-webfont.ttf),
+		 url(../fonts/montserrat-bold-webfont.svg),
+		 url(../fonts/montserrat-bold-webfont.woff);
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: Quicksand;
+	src: url(../fonts/quicksand-regular-webfont.ttf),
+		 url(../fonts/quicksand-regular-webfont.svg),
+		 url(../fonts/quicksand-regular-webfont.woff);
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: Quicksand;
+	src: url(../fonts/quicksand-bold-webfont.ttf),
+		 url(../fonts/quicksand-bold-webfont.svg),
+		 url(../fonts/quicksand-bold-webfont.woff);
+	font-style: normal;
+	font-weight: 700;
+}
+
+body {
+
+background-color: #E5E5E5;
+}
+
+svg {
+	padding: 30px;
+}
+
+
+
+
+.color-and-types__headers  {
+/*color: rgba(31, 32, 65, 0.05);*/
+color: red;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 100;
+line-height: 29px;
+text-align: right;
+padding-right: 30px;
+
+
+}
+h1.types_header {
+	font-size: 24px;
+	line-height: 29px;
+}
+
+h2.types_header {
+	font-size: 19px;
+	line-height: 23px;
+}
+
+h3.types_header {
+	font-size: 12px;
+	line-height: 15px;
+}
+.types_header_body{
+	font-size: 14px;
+	line-height: 24px;
+}
+/*заголовок h1 сайта*/
+h1.heading {
+font-size: 24px;
+line-height: 30px;
+color: #1F2041;
+font-weight: 600;
+}
+/*заголовок h2 сайта*/
+h2.heading { 
+font-size: 19px;
+line-height: 24px;
+color: #1F2041;
+font-weight: 600;
+}
+/*заголовок h3 сайта*/
+h3.heading { 
+font-size: 12px;
+line-height: 15px;
+color: #1F2041;
+text-transform: uppercase;
+font-weight: 600;
+}
+
+/*основной текст сайта*/
+.text_body { 
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(31, 32, 65, 0.75);
+	font-weight: 100;
+}
+
