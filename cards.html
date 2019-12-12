@@ -105,6 +105,41 @@
 									<label for="exit_date"><h3 class="heading">выезд</h3></label>
 									<input type="date" name="exit_date" id="exit_date">
 								</div>
+								<!-- количество гостей -->
+								<div class="guests_field">
+									<label for="guest"><h3 class="heading">гости</h3></label>
+									<input type="text" id="guest" name="guest" list="guests" placeholder="сколько гостей"> 
+										<datalist id="guests">
+											<option value="1 гость"></option>
+											<option value="2 гостя"></option>
+											<option value="3 гостя"></option>
+											<option value="4 гостя"></option>
+											<option value="5 гостя"></option>
+										</datalist>
+								</div>
+								<div class="order-table">
+									<table class="table-info">
+										<tbody>
+											<tr class="table-info_row">
+												<td class="table-info_price">
+													<span class="table-info_price-room">9 990</span>
+													<span class="table-info_currency">₽</span>
+													<span class="table-info_stay-of-days">x 4 суток</span>
+													<span class="table-info-price_room">39 960</span>
+													<span class="table-info_currency">₽</span>
+												</td>
+											</tr>
+											<tr class="table-info_row">
+												<td class="table-info_price">
+													<span class="table-info_disconte">Сбор за услуги: скидка </span>
+													<span class="table-info_disconte-sum">2790</span>
+													<span class="table-info_currency">₽</span>
+													<span class="price_ information">i</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</form>
 						</div>
 						<div class="row"> <!-- вход в личный кабинет-->
