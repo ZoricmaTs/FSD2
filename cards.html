@@ -87,8 +87,8 @@
 						<div class="row"> <!-- бронирование номера-->
 							<form action="https://" method="post">
 								<div class="order-title">
-									<span class="order_n">№</span>
-									<span class="order_number">888</span>
+									<span class="order_n"><h1 class="heading">№</h1></span>
+									<span class="order_number"><h1 class="heading">888</h1></span>
 									<span class="type">люкс</span>
 								</div>
 								<div>
@@ -131,18 +131,58 @@
 											</tr>
 											<tr class="table-info_row">
 												<td class="table-info_price">
-													<span class="table-info_disconte">Сбор за услуги: скидка </span>
-													<span class="table-info_disconte-sum">2790</span>
+													<span class="table-info_service-cost">Сбор за услуги: </span>
+													<span class="table-info_disconte-sum">скидка 2790</span>
 													<span class="table-info_currency">₽</span>
 													<span class="price_ information">i</span>
+													<span class="table-info_service-cost">0</span>
+													<span class="table-info_currency">₽</span>
+												</td>
+											</tr>
+											<tr class="table-info_row">
+												<td class="table-info_price">
+													<span class="table-info_additional-services">Сбор за дополнительные услуги</span>
+													<span class="price_information">i</span>
+													<span class="table-info_service-cost">300</span>
+													<span class="table-info_currency">₽</span>
+												</td>
+											</tr>
+											<tr class="table-info_row">
+												<td class="table-info_price">
+													<span class="table-info_total-cost"><h1 class="heading">итого</h1></span>
+													<span class="price_information"></span>
+													<span class="table-info_total-cost"><h1 class="heading">38 081</h1></span>
+													<span class="table-info_currency"><h1 class="heading">₽</h1></span>
 												</td>
 											</tr>
 										</tbody>
 									</table>
 								</div>
+								
 							</form>
 						</div>
 						<div class="row"> <!-- вход в личный кабинет-->
+							<form action="https://" method="post">
+								<h1 class="heading">Войти</h1>
+								<!-- Поле ввода электронной почты -->
+								<div class="login_fields">
+									<label for="email">
+										<input type="email" name="email" required placeholder="Email">
+									</label>
+									<label for="password-field">
+										<input type="password" name="password-field" required placeholder="Пароль">
+									</label>
+								</div>
+								<div class="button_long">
+									<input type="submit" value="войти">
+								</div>
+								<div class="">
+								Нет аккаунта на Toxin?
+								<div class="button_short">
+									<input type="submit" value="создать">
+								</div>
+								</div>
+							</form>
 						</div>
 					</section>
 					<section> <!-- колонка3 -->
