@@ -59,7 +59,6 @@ box-sizing: border-box;
 
 .color-block{
 display: flex;
-margin: 10px 20px 10px 0;	
 }
 
 .color-block__rectangle {
@@ -123,13 +122,13 @@ max-width: 403px;
 max-height: 321px;
 }
 
-.color-and-types__text {
+.type-block__text {
 display: flex;
 justify-content: flex-start;	
 }
 
-.color-and-types__head  {
-padding-right: 30px;
+.type-block__head  {
+border: 1px solid blue;
 
 font-family: Montserrat;
 font-style: normal;
@@ -137,9 +136,9 @@ font-weight: 400;
 text-align: right;
 }
 
-.types-block {
+.type-block {
 display: flex;
-margin: 10px 20px 10px 0;	
+border: 1px solid red;	
 }
 
 .type__heading_color_light-shade5 {
