@@ -122,19 +122,9 @@ max-width: 403px;
 max-height: 321px;
 }
 
-.type-block__text {
-display: flex;
-justify-content: flex-start;	
-}
+.type-block__text {/* display: flex; *//* justify-content: flex-start; */padding-left: 10px;}
 
-.type-block__head  {
-border: 1px solid blue;
-
-font-family: Montserrat;
-font-style: normal;
-font-weight: 400;
-text-align: right;
-}
+.type-block__head  {border: 1px solid blue;font-family: Montserrat;font-style: normal;font-weight: 400;text-align: right;min-width: 60px;padding-right: 10px;}
 
 .type-block {
 display: flex;
@@ -145,25 +135,19 @@ border: 1px solid red;
 color: rgba(31, 32, 65, 0.05);
 }
 
-.type__heading_h1 {
-font-size: 24px;
-line-height: 29px;
-}
+.type__heading_h1 {font-size: 24px;line-height: 29px;}
 
 .type__heading_h2 {
 font-size: 19px;
 line-height: 23px;
 }
 
-.type__heading_h3 {
-font-size: 12px;
-line-height: 15px;
-}
+.type__heading_h3 {font-size: 12px;line-height: 15px;}
 .type__heading_body {
 font-size: 14px;
 line-height: 24px;
 }
-/*заголовок h1 сайта*/
+/*Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº h1 ÑÐ°Ð¹Ñ‚Ð°*/
 .type__text_h1 {
 font-family: Quicksand;
 font-weight: 700;
@@ -171,7 +155,7 @@ font-size: 24px;
 line-height: 30px;
 }
 
-/*заголовок h2 сайта*/
+/*Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº h2 ÑÐ°Ð¹Ñ‚Ð°*/
 .type__text_h2 {
 font-family: Quicksand;
 font-weight: 700;
@@ -179,7 +163,7 @@ font-size: 19px;
 line-height: 24px;
 }
 
-/*заголовок h3 сайта*/
+/*Ð·Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº h3 ÑÐ°Ð¹Ñ‚Ð°*/
 .type__text_h3 { 
 font-family: Montserrat;
 font-weight: 700;
@@ -192,7 +176,7 @@ text-transform: uppercase;
 color: #1F2041;
 }
 
-/*основной текст сайта*/
+/*Ð¾ÑÐ½Ð¾Ð²Ð½Ð¾Ð¹ Ñ‚ÐµÐºÑÑ‚ ÑÐ°Ð¹Ñ‚Ð°*/
 .type__text_body { 
 font-family: Montserrat;
 font-size: 14px;
