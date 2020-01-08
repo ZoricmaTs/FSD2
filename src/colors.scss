@@ -1,0 +1,36 @@
+$color_dark-shade100: #1F2041;
+$color_dark-shade75: rgba(31, 32, 65, 0.75);
+$color_shade50: rgba(31, 32, 65, 0.5);
+$color_light-shade25: rgba(31, 32, 65, 0.25);
+$color_light-shade5: rgba(31, 32, 65, 0.05);
+$color_purple: #BC9CFF;
+$color_green: #6FCF97;
+
+.color-block__rectangle_color_dark-shade100 {
+  background-color: $color_dark-shade100;
+}
+
+.color-block__rectangle_color_dark-shade75 {
+    background-color: $color_dark-shade75;
+}
+
+.color-block__rectangle_color_shade50 {
+  background-color: $color_shade50;
+} 
+
+.color-block__rectangle_color_light-shade25 {
+  background-color: $color_light-shade25;
+}
+  
+  .color-block__rectangle_color_light-shade5 {
+  background-color: $color_light-shade5;
+  }
+  
+  .color-block__rectangle_color_purple {
+  background-color: $color_purple;
+  }
+  
+  .color-block__rectangle_color_green {
+  background-color: $color_green; 
+  }
+  

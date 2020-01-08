@@ -1,0 +1,25 @@
+{
+  "name": "FSD2",
+  "version": "1.0.0",
+  "description": "step 2 FSD",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/color_and_type.html",
+    "build": "parcel build src/color_and_type.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZoricmaTs/FSD2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZoricmaTs/FSD2/issues"
+  },
+  "homepage": "https://github.com/ZoricmaTs/FSD2#readme",
+  "devDependencies": {
+    "pug": "^2.0.4",
+    "sass": "^1.24.2"
+  }
+}

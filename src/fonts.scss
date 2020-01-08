@@ -1,0 +1,41 @@
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/montserrat-regular-webfont.ttf),
+		 url(../fonts/montserrat-regular-webfont.svg),
+		 url(../fonts/montserrat-regular-webfont.woff);
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/montserrat-bold-webfont.ttf),
+		 url(../fonts/montserrat-bold-webfont.svg),
+		 url(../fonts/montserrat-bold-webfont.woff);
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: Quicksand;
+	src: url(../fonts/quicksand-regular-webfont.ttf),
+		 url(../fonts/quicksand-regular-webfont.svg),
+		 url(../fonts/quicksand-regular-webfont.woff);
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Quicksand;
+	src: url(../fonts/quicksand-bold-webfont.ttf),
+		 url(../fonts/quicksand-bold-webfont.svg),
+		 url(../fonts/quicksand-bold-webfont.woff);
+	font-style: normal;
+	font-weight: 700;
+}
+$font-header: Quicksand;
+
+h1 {
+    font-family: $font-header;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
