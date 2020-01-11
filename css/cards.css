@@ -67,6 +67,10 @@ height: 44px;
 padding-left: 15px;
 }
 
+.dropdown-option {
+  margin-bottom: 31px;
+}
+
 .dropdown__position {
   position: relative;
 }
@@ -75,6 +79,47 @@ padding-left: 15px;
   width: 320px;
   height: 44px;
   padding-left: 15px;
+}
+
+.filter-button {
+
+  
+}
+
+.button {
+ 
+display: inline-flex;
+justify-content: center;
+align-items: center;
+height: max-content;
+}
+
+.button_long {
+
+
+  width: 100%;
+  max-width: 320px;
+
+  
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  border: none;
+  color: #FFFFFF;
+}
+
+.button__arrow {
+  
+  height: 44px;
+  width: 44px;
+
+}
+
+.material-icons_color_white {
+  color: red;
+  font-size: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+  
 }
 
 
@@ -122,6 +167,9 @@ min-height: 257px;
     background-color: #15cc34;
   }
 }
+
+
+
 
 /*
 .cards__container {

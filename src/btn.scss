@@ -1,0 +1,38 @@
+@import "colors.scss";
+
+.btn {
+    width: 100%;
+    min-width: 196px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 9px 20px;
+  
+  
+    background: linear-gradient(180deg, $color_purple 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    border: none;
+    color: #FFFFFF;
+  
+    
+    border: none;  
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: max-content;
+  
+    [data-icon] {
+        text-align: right;
+        padding-left: 10px;
+        &:before { content: attr(data-icon); }
+    }
+  }
+  
+  .button__text {
+    text-align: center;
+    width: 100%;
+  }
