@@ -33,19 +33,21 @@
 
 
 @mixin type__text_h1 {
-font-family: Quicksand;
+font-family: Quicksand, "Open Sans", Arial, sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
 line-height: 30px;
 }
 
+
+
 .type__text_h1 {
 	@include type__text_h1;
 } 
 
 @mixin type__text_h2 {
-font-family: Quicksand;
+font-family: Quicksand, "Open Sans", Arial, sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 19px;
@@ -57,7 +59,7 @@ line-height: 24px;
 } 
 
 @mixin type__text_h3 {
-font-family: Montserrat;
+font-family: Montserrat, Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
@@ -70,13 +72,102 @@ text-transform: uppercase;
 } 
 
 @mixin type__text_body {
-font-family: Montserrat;
+font-family: Montserrat, Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 24px;
 }
+
 .type__text_body {
 	@include type__text_body;
 } 
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+	src: local('Material Icons'),
+	  local('MaterialIcons-Regular'),
+	  url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+	  url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+	  url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  @mixin material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: material-icons24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  .material-icons {
+	@include material-icons;
+} 
+
+
+.filter-date__position:before {
+
+	@include material-icons;
+	content: "keyboard_arrow_down";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 105px;
+	top: 15px;
+	z-index: 2;
+	width: 44px;
+	height: 44px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+	color:  rgba(31, 32, 65, 0.5);
+	cursor: pointer;
+	border: 1px solid red;
+  }
+
+.dropdown__position:before {
+	@include material-icons;
+	content: "keyboard_arrow_down";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 275px;
+	top: 15px;
+	z-index: 2;
+	width: 44px;
+	height: 44px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+	color:  rgba(31, 32, 65, 0.5);
+	cursor: pointer;
+	border: 1px solid red;
+}
+
 

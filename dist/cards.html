@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+	<html lang="ru">
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" href="/colors.e93a77c8.css">
+			<link rel="stylesheet" href="/fonts.2a1c5827.css">
+            <link rel="stylesheet" type="text/css" href="/cards.98911d2a.css">
+            <!--<script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css" rel="stylesheet" type="text/css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>-->
+		<script src="/colors.e93a77c8.js"></script><script src="/fonts.2a1c5827.js"></script><script src="/cards.98911d2a.js"></script></head>	
+		<body>
+			<section class="logo">
+				<div class="logo__toxin logo__toxin_margin_30"></div>
+			</section>
+			<article class="cards">
+				<section class="cards-column">
+					<div class="card-row popup">
+						<form class="selection-room-form" action="https://" method="post">
+							<div class="filter-heading">
+								<h1 class="filter-heading__head type__text_h1">Найдём номера под ваши пожелания</h1>
+							</div>
+							<div class="filter-dates">
+								<div class="filter-date">
+									<div class="filter-date-arrival filter-date__position">	
+										<label class="filter-date-arrival__label" for="arrival_date"><h3 class="type__text_h3">прибытие</h3></label>
+										<input class="filter-date-arrival__input type__text_body" name="arrival_date" type="text" id="arrival_date" readonly="readonly" placeholder="ДД.ММ.ГГГГ">
+										<!--<i class="material-icons material-icons__arrow-down">keyboard_arrow_down</i>-->
+									</div>
+									<div class="filter-date-exit filter-date__position">
+										<label class="filter-date-exit__label" for="exit_date"><h3 class="type__text_h3">выезд</h3></label>
+										<input class="filter-date-exit__input type__text_body" name="exit_date" type="text" id="exit_date" readonly="readonly" placeholder="ДД.ММ.ГГГГ">
+										<!--<i class="material-icons material-icons__arrow-down">keyboard_arrow_down</i>-->
+									</div>
+								</div>
+								<div class="filter-date-calendar">
+								</div>
+							</div>
+							<div class="dropdown-option dropdown__position">
+								<label class="dropdown-option__label" for="guest"><h3 class="type__text_h3">гости</h3></label>
+								<input class="dropdown-option__input type__text_body" type="text" id="guest" name="guest" list="guests" placeholder="Сколько гостей">
+								<!--<i class="material-icons material-icons__arrow-down">keyboard_arrow_down</i> -->
+									<datalist class="dropdown-option__input-guests" id="guests">
+										<option class="type__text_body" value="1 гость"></option>
+										<option value="2 гостя"></option>
+										<option value="3 гостя"></option>
+										<option value="4 гостя"></option>
+										<option value="5 гостя"></option>
+										<option value="1 младенец"></option>
+										<option value="2 младенца"></option>
+										<option value="3 младенца"></option>
+										<option value="4 младенца"></option>
+										<option value="5 младенцев"></option>
+									</datalist>
+							</div>
+<!--
+							<div class="dropdown__select js-dropdown__select">
+								<span class="dropdown__select-text">Сколько гостей</span>
+							</div>
+							<div class="dropdown__options js-dropdown__options">
+								<div class="dropdown__option js-dropdown__option">
+									<section class="dropdown-option js-dropdown-option" data-group="гости">
+										<div class="dropdown-option__header js-dropdown-option__header">
+											<h3 class="heading heading_type_h3">взрослые</h3>
+										</div>
+										<div class="dropdown-option__container">
+											<div class="dropdown-option__circle js-dropdown-option__circle dropdown-option__circle_inactive">-</div>
+											<div class="dropdown-option__number js-dropdown-option__number">0</div>
+											<div class="dropdown-option__circle js-dropdown-option__circle">+</div>
+										</div>
+									</section>
+								</div>
+								<div class="dropdown__option js-dropdown__option">
+									<section class="dropdown-option js-dropdown-option" data-group="гости">
+										<div class="dropdown-option__header js-dropdown-option__header">
+											<h3 class="heading heading_type_h3">дети</h3>
+										</div>
+										<div class="dropdown-option__container">
+											<div class="dropdown-option__circle js-dropdown-option__circle dropdown-option__circle_inactive">-</div>
+											<div class="dropdown-option__number js-dropdown-option__number">0</div>
+											<div class="dropdown-option__circle js-dropdown-option__circle">+</div>
+										</div>
+									</section>
+								</div>
+								<div class="dropdown__option js-dropdown__option">
+									<section class="dropdown-option js-dropdown-option" data-group="младенцы">
+										<div class="dropdown-option__header js-dropdown-option__header">
+											<h3 class="heading heading_type_h3">младенцы</h3>
+										</div>
+										<div class="dropdown-option__container">
+											<div class="dropdown-option__circle js-dropdown-option__circle dropdown-option__circle_inactive">-</div>
+											<div class="dropdown-option__number js-dropdown-option__number">0</div>
+											<div class="dropdown-option__circle js-dropdown-option__circle">+</div>
+										</div>
+									</section>
+								</div>
+							-->
+							
+							
+							<div>
+								<button class="button button_long" type="submit">Подобрать номер
+									<div class="button__arrow">
+										<i class="material-icons  material-icons_color_white">arrow_forward</i>
+									</div>
+								</button>
+							</div>
+
+
+
+
+
+
+						</form>	
+					</div>
+					<div class="card-row popup">
+						<form class="register-form"></form>	"
+					</div>
+				</section>
+				<section class="cards-column">
+					<div class="card-row popup">
+						<form class="reservation-form">	
+						</form>	
+					</div>
+					<div class="card-row popup">
+						<form class="login-form"></form>	
+					</div>
+				</section>
+				<section class="cards-column">
+					<div class="calendar-form"></div>
+					<div class="room-preview"></div>
+					<div class="room-preview"></div>
+				</section>
+			</article>	
+		</body>
+	</html>
