@@ -9,11 +9,7 @@
 			<link rel="stylesheet" type="text/css" href="../css/form_elements.css">
 			<link rel="stylesheet" href="../node_modules/air-datepicker/dist/css/datepicker.min.css" />
 
-			<script src="../node_modules/jquery/dist/jquery.js" type="text/javacsript"></script>
-			
-			<script src="import-jquery.js"></script>
-			
-			
+			<script src="../node_modules/jquery/dist/jquery.js" type="text/javacsript"></script>	
 			<script src="../node_modules/air-datepicker/dist/js/datepicker.min.js" type="text/javacsript"></script>
 		</head>	
 		<body>
@@ -22,14 +18,28 @@
 			</section>
 			<article class="form-elements">
 				<div class="form-element text-field">
-					<label class="text-field__label"><h3 class="type__text_h3">Text Field</h3></label>
+					<label class="text-field__label">
+						<h3 class="type__text_h3">Text Field</h3>
+					</label>
 					<input class="text-field__input type__text_body" type="email" name="input-email" placeholder="Email">
 				</div>
 				<div class="form-element">
-					<label class="text-field__label"><h3 class="type__text_h3">Text Field</h3></label>
+					<label class="text-field__label">
+						<h3 class="type__text_h3">Text Field</h3> 
+					</label>
 					<input class="text-field__input text-field__input_focus type__text_body" type="email" name="input-email" placeholder="This is pretty awesome">
 				</div>
-				<div class="form-element"></div>
+				<div class="form-element">
+					<div class="form-element__heading">
+						<h3 class="type__text_h3">dropdown</h3>
+					</div>
+					<section class="form-element dropdown">		
+						<div class="dropdown-arrow">
+							<i class="dropdown-arrow__arrow-down material-icons">keyboard_arrow_down</i>
+						</div>
+						<div class="dropdown__select">сколько гостей</div>
+					</section>
+				</div>
 				<div class="form-element"></div>
 				<div class="form-element">
 					<label class="text-field__label"><h3 class="type__text_h3">date Dropdown</h3></label>
