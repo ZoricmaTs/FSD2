@@ -1,5 +1,5 @@
 @import "colors.scss";
-
+@import "fonts.scss";
 .btn {
     width: 100%;
     min-width: 196px;
@@ -36,3 +36,51 @@
     text-align: center;
     width: 100%;
   }
+
+
+  .filter-date__position:before {
+
+	@include material-icons;
+	content: "keyboard_arrow_down";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 105px;
+	top: 15px;
+	z-index: 2;
+	width: 44px;
+	height: 44px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+	color:  rgba(31, 32, 65, 0.5);
+	cursor: pointer;
+	border: 1px solid red;
+  }
+
+.dropdown__position:before {
+	@include material-icons;
+	content: "keyboard_arrow_down";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 275px;
+	top: 15px;
+	z-index: 2;
+	width: 44px;
+	height: 44px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+	color:  rgba(31, 32, 65, 0.5);
+	cursor: pointer;
+	border: 1px solid red;
+}
+
+

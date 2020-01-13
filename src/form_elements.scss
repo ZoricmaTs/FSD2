@@ -1,0 +1,58 @@
+@import "colors.scss";
+@import "fonts.scss";
+
+
+/*
+
+$text-color:blue;
+
+@mixin text-color {
+// Variable is only set to Red if it has not been set beforehand
+  $text-color: red !default;
+  color: $text-color;
+}
+
+
+.text-field__input_normal {
+  // Include mixin with !default color set
+  @include text-color;
+ 
+}
+
+.text-field__input_focus:focus,
+ {
+  @include text-color;
+ 
+ }
+
+*/
+
+
+/*TODO поменять !default*/
+.text-field__input {
+    padding-left: 15px;
+    max-width: 320px;
+    width: 100%;
+    line-height: 44px;
+    background: #FFFFFF;
+    color: $color_light-shade25;
+    border: 1px solid $color_light-shade25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+  }
+  
+  .text-field__input:hover,
+  .text-field__input:focus {
+    outline: none;
+    color: $color_dark-shade75;
+    border: 1px solid $color_dark-shade75;
+  }
+
+  .text-field__input_focus {
+    outline: none;
+    color: $color_dark-shade75;
+    border: 1px solid $color_dark-shade75;
+  }
+  
+ 

@@ -1,0 +1,21 @@
+ /* 950px */
+ @media only screen and (max-width: 950px) {
+    .color-and-types {
+        display: flex;
+        flex-direction: row;
+        background-color: #ffb549;
+      }
+    }
+    .color-and-types__container { 
+      display: flex;
+      flex-direction: column;
+      background-color: #15cc34;
+    }
+  
+  /* 320px */
+  @media only screen and (max-width: 320px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  
