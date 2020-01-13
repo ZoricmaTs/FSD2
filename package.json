@@ -4,8 +4,8 @@
   "description": "step 2 FSD",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/color_and_type.html",
-    "build": "parcel build src/color_and_type.html"
+    "dev": "parcel src/form_elements.html",
+    "build": "parcel build src/form_elements.html"
   },
   "repository": {
     "type": "git",
