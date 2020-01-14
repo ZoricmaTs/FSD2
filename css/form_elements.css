@@ -19,5 +19,28 @@ margin: 30px;
 }
 
 
-
+/*
+@mixin icon($types) {
+	@each $type in $types {
+		.dropdown-date__min &[type=#{$type}] {
+			@content;
+		}
+	}
+}
+input {
+	@include icon(text); 
+    &::after {
+          
+      left: 100px;
+      @include material-icons;
+      @include icon-arrow;
+      z-index: 10;
+      content: "keyboard_arrow_down";
+      content: "+";
+      color: $color_shade50;
+      background-color: green;
+      border: 1px solid red;
+    }
+	}
+*/
 
