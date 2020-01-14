@@ -34,9 +34,9 @@
 						<h3 class="type__text_h3">dropdown</h3>
 					</div>
 					<section class="form-element dropdown">		
-						<div class="dropdown-arrow">
+						<!--<div class="dropdown-arrow">
 							<i class="dropdown-arrow__arrow-down material-icons">keyboard_arrow_down</i>
-						</div>
+						</div>-->
 						<div class="dropdown__select">сколько гостей</div>
 					</section>
 				</div>
@@ -46,31 +46,35 @@
 					</label>
 					<input class="text-field__input type__text_body" type="text" name="input-date" placeholder="ДД.ММ.ГГГГ">
 				</div>
-				<div class="form-element text-field filter-dates">
-					<div class="filter-date__min">
-						<div class="filter-date__heading">
+				<div class="form-element text-field dropdown-dates">
+					<div class="dropdown-date__min">
+						<div class="dropdown-date__heading">
 							<h3 class="type__text_h3">date Dropdown</h3>
 						</div>
 						<!--<div class="dropdown-arrow">
 							<i class="dropdown-arrow__arrow-down material-icons">keyboard_arrow_down</i>
 						</div>-->
-						<input class="filter-date__input type__text_body datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
+						<input class="dropdown-date__min-input type__text_body datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
 					</div>
-					<div class="filter-date__min">
-						<div class="filter-date__heading">
+					<div class="dropdown-date__min">
+						<div class="dropdown-date__heading">
 							<h3 class="type__text_h3">date Dropdown</h3>
 						</div>
-						<!--<div class="dropdown-arrow">
-							<i class="dropdown-arrow__arrow-down material-icons">keyboard_arrow_down</i>
-						</div>-->
-						<input class="filter-date__input type__text_body datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
+						<section class="dropdown-date__min">
+							
+							<input class="dropdown-date__min-input type__text_body datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
+							<!--<div class="dropdown-arrow">
+								<i class="dropdown-arrow__arrow-down material-icons">keyboard_arrow_down</i>
+							</div>-->
+						</section>
+						
 					</div>
 				</div>
-				<div class="form-element filter-date">
-					<label class="filter-date__label">
+				<div class="form-element dropdown-date">
+					<label class="dropdown-date__label">
 						<h3 class="type__text_h3">filter date dropdown</h3>
 					</label>
-					<input class="filter-date__input type__text_body  datepicker-here" type="text" name="input-date" placeholder="19 авг - 23 авг">
+					<input class="dropdown-date__input type__text_body  datepicker-here" type="text" name="input-date" placeholder="19 авг - 23 авг">
 				</div>
 			</article>
 		
