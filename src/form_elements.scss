@@ -2,36 +2,9 @@
 @import "fonts.scss";
 
 
-/*
-
-$text-color:blue;
-
-@mixin text-color {
-// Variable is only set to Red if it has not been set beforehand
-  $text-color: red !default;
-  color: $text-color;
-}
-
-
-.text-field__input_normal {
-  // Include mixin with !default color set
-  @include text-color;
- 
-}
-
-.text-field__input_focus:focus,
- {
-  @include text-color;
- 
- }
-
-*/
-
-
 /*TODO поменять !default*/
-.text-field__input {
+@mixin input {
     padding-left: 15px;
-    max-width: 320px;
     width: 100%;
     line-height: 44px;
     background: #FFFFFF;
@@ -41,7 +14,10 @@ $text-color:blue;
     border-radius: 4px;
     text-overflow: ellipsis;
   }
-  
+  .text-field__input {
+    @include input;
+    max-width: 320px;
+  }
   .text-field__input:hover,
   .text-field__input:focus {
     outline: none;
@@ -61,7 +37,8 @@ $text-color:blue;
 
   .dropdown__select {
     @extend .type__text_body;
-    @extend .text-field__input;
+    @include input;
+    max-width: 320px;
     
   }
   .dropdown-arrow {
@@ -81,3 +58,21 @@ $text-color:blue;
     color: $color_shade50;
     border: 1px solid red;
   }
+
+  .filter-dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 320px;
+  }
+
+  .filter-date__min {
+    width: 150px;
+  }
+
+.filter-date__input {
+  
+  @include input;
+  max-width: 266px;
+
+}
