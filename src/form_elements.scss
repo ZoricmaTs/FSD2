@@ -183,13 +183,60 @@ position: relative;
   }
 }
 
-input:checked {
-  + .toggle-button__switch {
-    grid-template-columns: 1fr 1fr 0fr; 
-    &::after {
-      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  input:checked {
+    + .toggle-button__switch {
+      grid-template-columns: 1fr 1fr 0fr; 
+      &::after {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      }
     }
   }
 }
+
+$stars: 5;
+$star-size: 24px;
+$star-spacing: 2px;
+$star-on-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$star-off-color: #CCCCCC;
+
+.rate-button {
+	width: ($star-size * $stars) + ($star-spacing * ($stars - 1));
+	height: $star-size;
+
+
+	label {
+		float: right;
+		position: relative;
+		width: $star-size;
+		height: $star-size;
+		cursor: pointer;
+		
+		&:not(:first-of-type) {
+			padding-right: $star-spacing;
+		}
+		
+		&:before {
+      @include material-icons;
+			content: "star_border";
+			font-size: $star-size;
+			color: $star-off-color;
+
+		}
+	}
+	
+	input {
+		display: none;
+	}
+	
+	input:checked ~ label:before,
+	&:not(:checked) > label:hover:before,
+	&:not(:checked) > label:hover ~ label:before {
+    content: "star";
+    background: $star-on-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	}
 }
+
+
 
