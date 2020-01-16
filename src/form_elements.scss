@@ -196,8 +196,7 @@ position: relative;
 $stars: 5;
 $star-size: 24px;
 $star-spacing: 2px;
-$star-on-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-$star-off-color: #CCCCCC;
+$star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 .rate-button {
 	width: ($star-size * $stars) + ($star-spacing * ($stars - 1));
@@ -219,8 +218,9 @@ $star-off-color: #CCCCCC;
       @include material-icons;
 			content: "star_border";
 			font-size: $star-size;
-			color: $star-off-color;
-
+      background: $star-color;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 		}
 	}
 	
@@ -232,7 +232,7 @@ $star-off-color: #CCCCCC;
 	&:not(:checked) > label:hover:before,
 	&:not(:checked) > label:hover ~ label:before {
     content: "star";
-    background: $star-on-color;
+    background: $star-color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	}
