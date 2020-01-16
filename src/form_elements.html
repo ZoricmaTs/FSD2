@@ -16,34 +16,34 @@
 			<section class="logo">
 				<div class="logo__toxin logo__toxin_margin_30"></div>
 			</section>
-			<article class="form-elements">
-				<div class="form-element text-field">
+			<article class="form-elements__fields">
+				<div class="form-element__field text-field">
 					<label class="text-field__label">
 						<h3 class="type__text_h3">Text Field</h3>
 					</label>
 					<input class="text-field__input type__text_body" type="email" name="input-email" placeholder="Email">
 				</div>
-				<div class="form-element text-field">
+				<div class="form-element__field text-field">
 					<label class="text-field__label">
 						<h3 class="type__text_h3">Text Field</h3> 
 					</label>
 					<input class="text-field__input text-field__input_focus type__text_body" type="email" name="input-email" placeholder="This is pretty awesome">
 				</div>
-				<div class="form-element">
-					<div class="form-element__heading">
+				<div class="form-element__field dropdown">
+					<div class="dropdown__heading">
 						<h3 class="type__text_h3">dropdown</h3>
 					</div>
-					<section class="form-element dropdown">		
+					<section class="dropdown__field">		
 						<div class="dropdown__select">сколько гостей</div>
 					</section>
 				</div>
-				<div class="form-element text-field">
+				<div class="form-element__field text-field">
 					<label class="text-field__label">
 						<h3 class="type__text_h3">masked text field</h3>
 					</label>
 					<input class="text-field__input type__text_body" type="text" name="input-date" placeholder="ДД.ММ.ГГГГ">
 				</div>
-				<div class="form-element text-field dropdown-dates">
+				<div class="form-element__field dropdown-dates">
 					<div class="dropdown-date">
 						<div class="dropdown-date__heading">
 							<h3 class="type__text_h3">date Dropdown</h3>
@@ -61,15 +61,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="form-element filter-date-dropdown">
+				<div class="form-element__field filter-date-dropdown">
 					<label class="filter-date-dropdown__label">
 						<h3 class="type__text_h3">filter date dropdown</h3>
 					</label>
 					<div class="filter-date-dropdown__input">
-						<input class="filter-date-dropdown__input_width_266px type__text_body  datepicker-here" type="text" name="input-date" placeholder="19 авг - 23 авг">
+						<input class="filter-date-dropdown__input_width_266px type__text_body datepicker-here" type="text" name="input-date" placeholder="19 авг - 23 авг">
 					</div>
 				</div>
-				<div class="form-element text-field-subscription text-field">
+				<div class="form-element__field text-field-subscription text-field">
 					<label class="text-field-subscription__label text-field__label">
 						<h3 class="type__text_h3">subscription text field</h3>
 					</label>
@@ -77,6 +77,56 @@
 						<input class="text-field-subscription__input_width_266px type__text_body" type="email" name="input-email" placeholder="Email">
 					</div>
 				</div>
+			</article>
+			<article class="form-elements__check-button">
+				<div class="form-element__check-button checkbox-buttons">
+					<div class="form-element__check-button__heading">
+						<h3 class="type__text_h3">Checkbox Buttons</h3>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="smokable" id="smokable-field">
+						<label for="smokable-field">Можно курить</label>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="pets" id="pets-field" checked>
+						<label for="pets-field">Можно с питомцами</label>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="guests" id="guests-field" checked>
+						<label for="guests-field">Можно пригласить гостей (до 10 человек)</label>
+					</div>
+				</div>
+				<div class="form-element__check-button radio-buttons">
+					<div class="form-element__check-button__heading">
+						<h3 class="type__text_h3">Radio Buttons</h3>
+					</div>
+					<div class="radio-buttons__gender">
+					  <label class="radio-buttons__gender">
+						<input class="radio-buttons__gender_input" type="radio" name="gender" value="male" checked>Мужчина
+					  </label>
+					  <label class="radio-buttons__gender">
+						<input class="radio-buttons__gender_input" type="radio" name="gender" value="female">Женщина
+					  </label>
+					</div>
+				</div>
+				<div class="form-element__check-button toggle">
+					<div class="toggle-button">
+						<label class="toggle-button__label" for="subscription-field">
+							<input class="toggle-button__input" type="checkbox" name="subscription" id="subscription-field" checked />
+								<div class="toggle-button__switch"></div>
+						</label>
+						<span>Получать спецпредложения</span>
+					</div>
+					<div class="toggle-button">
+						<label class="toggle-button__label" for="subscription-field">
+							<input class="toggle-button__input" type="checkbox" name="subscription" id="subscription-field" />
+								<div class="toggle-button__switch"></div>
+						</label>
+						<span>Получать спецпредложения</span>
+					</div>
+				</div>
+				<div class="form-element__check-button"></div>
+				<div class="form-element__check-button"></div>
 			</article>
 		
 		</body>
