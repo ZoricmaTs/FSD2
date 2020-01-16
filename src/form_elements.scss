@@ -2,8 +2,8 @@
 @import "fonts.scss";
 
 body {
-  display: flex;
-  flex-direction: row;
+padding: 140px;
+
 }
 
 .form-elements__fields {
@@ -79,7 +79,7 @@ body {
 
   .dropdown-date__input {
     position: relative;
-    width: 150px;
+    max-width: 150px;
       &:before {
         left: 105px;
         @include material-icons;
@@ -96,6 +96,7 @@ body {
     @extend .type__text_body;
     @include input-form;
     padding-right: 44px;
+    width: 150px;
   }
 
 .filter-date-dropdown {
@@ -138,6 +139,47 @@ position: relative;
   @include input-form;
   max-width: 266px
 }
+
+
+
+
+
+.option-check {
+  display: block;
+  margin-bottom: 13px;
+}
+
+
+.check__input {
+position: absolute;
+width: 1px;
+height: 1px;
+overflow: hidden;
+clip: (0 0 0 0);
+}
+.check__box {
+position: absolute;
+background: #FFFFFF;
+margin-top: 0px;
+  margin-left: -1em;
+/* Primary Color */
+width: 20px;
+height: 20px;
+border: 1px solid #BC9CFF;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.check__input:checked + .check__box {
+background-position: center no-repeat;
+
+background: url("data:image/svg+xml,%3Csvg width='10' height='9' viewBox='0 0 10 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.46439 2.40768L5.70703 6.65032L4.29282 8.06453L0.0501771 3.82189L1.46439 2.40768Z' fill='url(%23paint0_linear)'/%3E%3Cpath d='M8.53546 0.993466L9.94967 2.40768L4.29282 8.06453L2.8786 6.65032L8.53546 0.993466Z' fill='url(%23paint1_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='7.82835' y1='0.286359' x2='2.1715' y2='5.94321' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BC9CFF'/%3E%3Cstop offset='1' stop-color='%238BA4F9'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='7.82835' y1='0.286359' x2='2.1715' y2='5.94321' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23BC9CFF'/%3E%3Cstop offset='1' stop-color='%238BA4F9'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat;
+
+}
+
+
+
+
 
 
 

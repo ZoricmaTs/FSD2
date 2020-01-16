@@ -83,18 +83,21 @@
 					<div class="form-element__check-button__heading">
 						<h3 class="type__text_h3">Checkbox Buttons</h3>
 					</div>
-					<div class="checkbox">
-						<input type="checkbox" name="smokable" id="smokable-field">
-						<label for="smokable-field">Можно курить</label>
-					</div>
-					<div class="checkbox">
-						<input type="checkbox" name="pets" id="pets-field" checked>
-						<label for="pets-field">Можно с питомцами</label>
-					</div>
-					<div class="checkbox">
-						<input type="checkbox" name="guests" id="guests-field" checked>
-						<label for="guests-field">Можно пригласить гостей (до 10 человек)</label>
-					</div>
+					<label class="check option-check">
+						<input class="check__input" type="checkbox">
+						<span class="check__box"></span>
+						Можно курить
+					</label>
+					<label class="check option-check">
+						<input class="check__input" type="checkbox">
+						<span class="check__box"></span>
+						Можно с питомцами
+					</label>
+					<label class="check option-check">
+						<input class="check__input" type="checkbox">
+						<span class="check__box"></span>
+						Можно пригласить гостей (до 10 человек)
+					</label>	
 				</div>
 				<div class="form-element__check-button radio-buttons">
 					<div class="form-element__check-button__heading">
@@ -146,12 +149,14 @@
 					<div class="form-element__check-button__heading">
 						<h3 class="type__text_h3">rate button</h3>
 					</div>
-					<div class="rate-button">
-						<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
-						<input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
-						<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
-						<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
-						<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+					<div class="form-element__check-button-row">
+						<div class="rate-button">
+							<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+							<input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+							<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+							<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+							<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+						</div>
 					</div>
 				</div>
 			</article>
