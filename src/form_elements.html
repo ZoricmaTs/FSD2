@@ -18,19 +18,19 @@
 			</section>
 			<article class="form-elements__fields">
 				<div class="form-element__field text-field">
-					<label class="text-field__label">
+					<label class="form-element__heading text-field__label">
 						<h3 class="type__text_h3">Text Field</h3>
 					</label>
-					<input class="text-field__input type__text_body" type="email" name="input-email" placeholder="Email">
+					<input class="form-element__input text-field__input type__text_body" type="email" name="input-email" placeholder="Email">
 				</div>
 				<div class="form-element__field text-field">
-					<label class="text-field__label">
+					<label class="form-element__heading text-field__label">
 						<h3 class="type__text_h3">Text Field</h3> 
 					</label>
-					<input class="text-field__input text-field__input_focus type__text_body" type="email" name="input-email" placeholder="This is pretty awesome">
+					<input class="form-element__input text-field__input text-field__input_focus type__text_body" type="email" name="input-email" placeholder="This is pretty awesome">
 				</div>
 				<div class="form-element__field dropdown">
-					<div class="dropdown__heading">
+					<div class="form-element__heading dropdown__heading">
 						<h3 class="type__text_h3">dropdown</h3>
 					</div>
 					<section class="dropdown__field">		
@@ -38,43 +38,43 @@
 					</section>
 				</div>
 				<div class="form-element__field text-field">
-					<label class="text-field__label">
+					<label class="form-element__heading text-field__label">
 						<h3 class="type__text_h3">masked text field</h3>
 					</label>
-					<input class="text-field__input type__text_body" type="text" name="input-date" placeholder="ДД.ММ.ГГГГ">
+					<input class="form-element__input text-field__input type__text_body" type="text" name="input-date" placeholder="ДД.ММ.ГГГГ">
 				</div>
 				<div class="form-element__field dropdown-dates">
 					<div class="dropdown-date">
-						<div class="dropdown-date__heading">
+						<div class="form-element__heading dropdown-date__heading">
 							<h3 class="type__text_h3">date Dropdown</h3>
 						</div>
 						<div class="dropdown-date__input">
-							<input class="dropdown-date__input_min-width type__text_body datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
+							<input class="form-element__input dropdown-date__input_min-width type__text_body datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
 						</div>
 					</div>
 					<div class="dropdown-date">
-						<div class="dropdown-date__heading">
+						<div class="form-element__heading dropdown-date__heading">
 							<h3 class="type__text_h3">date Dropdown</h3>
 						</div>
 						<div class="dropdown-date__input">
-							<input class="dropdown-date__input_min-width type__text_body datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
+							<input class="form-element__input dropdown-date__input_min-width type__text_body datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
 						</div>
 					</div>
 				</div>
 				<div class="form-element__field filter-date-dropdown">
-					<label class="filter-date-dropdown__label">
+					<label class="form-element__heading filter-date-dropdown__label">
 						<h3 class="type__text_h3">filter date dropdown</h3>
 					</label>
 					<div class="filter-date-dropdown__input">
-						<input class="filter-date-dropdown__input_width_266px type__text_body datepicker-here" type="text" name="input-date" placeholder="19 авг - 23 авг">
+						<input class="form-element__input filter-date-dropdown__input_width_266px type__text_body datepicker-here" type="text" name="input-date" placeholder="19 авг - 23 авг">
 					</div>
 				</div>
 				<div class="form-element__field text-field-subscription text-field">
-					<label class="text-field-subscription__label text-field__label">
+					<label class="form-element__heading text-field-subscription__label text-field__label">
 						<h3 class="type__text_h3">subscription text field</h3>
 					</label>
 					<div class="text-field-subscription__input">
-						<input class="text-field-subscription__input_width_266px type__text_body" type="email" name="input-email" placeholder="Email">
+						<input class="form-element__input text-field-subscription__input_width_266px type__text_body" type="email" name="input-email" placeholder="Email">
 					</div>
 				</div>
 			</article>
@@ -86,20 +86,17 @@
 					<label class="check option-check">
 						<input class="check__input" type="checkbox">
 						<span class="check__box"></span>
-						<div class="check__text">Можно курить</div>
-						
+						<div class="check__text">Можно курить</div>						
 					</label>
 					<label class="check option-check">
 						<input class="check__input" type="checkbox" checked>
 						<span class="check__box"></span>
-						<div class="check__text">Можно с питомцами</div>
-						
+						<div class="check__text">Можно с питомцами</div>						
 					</label>
 					<label class="check option-check">
 						<input class="check__input" type="checkbox" checked>
 						<span class="check__box"></span>
-						<div class="check__text">Можно пригласить гостей (до 10 человек)</div>
-						
+						<div class="check__text">Можно пригласить гостей (до 10 человек)</div>						
 					</label>	
 				</div>
 				<div class="form-element__check-button radio-buttons">
@@ -116,19 +113,22 @@
 					</div>
 				</div>
 				<div class="form-element__check-button toggle">
+					<div class="form-element__check-button__heading">
+						<h3 class="type__text_h3">toggle</h3>
+					</div>
 					<div class="toggle-button">
 						<label class="toggle-button__label" for="subscription-field">
 							<input class="toggle-button__input" type="checkbox" name="subscription" id="subscription-field" checked />
 								<div class="toggle-button__switch"></div>
 						</label>
-						<span>Получать спецпредложения</span>
+						<span class="toggle-button__text type__text_body">Получать спецпредложения</span>
 					</div>
 					<div class="toggle-button">
 						<label class="toggle-button__label" for="subscription-field">
 							<input class="toggle-button__input" type="checkbox" name="subscription" id="subscription-field" />
 								<div class="toggle-button__switch"></div>
 						</label>
-						<span>Получать спецпредложения</span>
+						<span class="toggle-button__text type__text_body">Получать спецпредложения</span>
 					</div>
 				</div>
 				<div class="form-element__check-button like-buttons">
@@ -154,11 +154,11 @@
 					</div>
 					<div class="form-element__check-button-row">
 						<div class="rate-button">
-							<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
-							<input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
-							<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
-							<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
-							<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+							<input class="rate-button__input" type="radio" id="star5" name="rating" value="5"/><label class="rate-button__label" for="star5"></label>
+							<input class="rate-button__input" type="radio" id="star4" name="rating" value="4" checked/><label class="rate-button__label" for="star4"></label>
+							<input class="rate-button__input" type="radio" id="star3" name="rating" value="3"/><label class="rate-button__label" for="star3"></label>
+							<input class="rate-button__input" type="radio" id="star2" name="rating" value="2"/><label class="rate-button__label" for="star2"></label>
+							<input class="rate-button__input" type="radio" id="star1" name="rating" value="1"/><label class="rate-button__label" for="star1"></label>
 						</div>
 					</div>
 				</div>

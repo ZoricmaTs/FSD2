@@ -10,6 +10,15 @@ padding: 140px;
   border: 1px solid green;
 }
 
+.form-element__heading { 
+  margin-bottom: 5px;
+}
+ 
+.form-element__input {
+  margin-bottom: 20px;
+}
+ //dtext field
+//--------------------------------------------------------------
 
 /*TODO поменять !default*/
 /*TODO сделать отдельно &__элемент !!*/
@@ -45,12 +54,18 @@ padding: 140px;
     color: $color_dark-shade75;
     border: 1px solid $color_dark-shade75;
   }
+  //dropdown 320px
+//--------------------------------------------------------------
+
+
 /*TODO добавить select*/
 .dropdown {
   position: relative;
   max-width: 320px;
 }
-
+.dropdown__field {
+  margin-bottom: 23px;
+}
   .dropdown__select {
     position: relative;
     @extend .type__text_body;
@@ -59,8 +74,7 @@ padding: 140px;
     max-width: 320px;
     padding-right: 44px;
       &::after {
-        
-        left: 253px;
+        left: 273px;
         @include material-icons;
         @include icon-arrow;
         z-index: 4;
@@ -70,7 +84,8 @@ padding: 140px;
       }
 
   }
-  
+  //dropdown-date _min-width
+//--------------------------------------------------------------
   .dropdown-dates {
     display: flex;
     flex-direction: row;
@@ -100,6 +115,9 @@ padding: 140px;
     width: 150px;
   }
 
+//filter-date-dropdown
+//--------------------------------------------------------------
+
 .filter-date-dropdown {
 position: relative;
   &:before {
@@ -120,6 +138,8 @@ position: relative;
   max-width: 266px;
 }
 
+//subscription__input
+//--------------------------------------------------------------
 .text-field-subscription__input {
   position: relative;
   &:before {
@@ -141,58 +161,72 @@ position: relative;
   max-width: 266px
 }
 
-
-.check {
-  padding-left: 20px;
+//checkbox-buttons общие
+//--------------------------------------------------------------
+.checkbox-buttons {
+  max-width: 222px;
+  border: 1px solid blue;
 }
 
-
+.form-element__check-button__heading {
+  margin-bottom: 16px;
+}
+//checkbox
+//--------------------------------------------------------------
 .option-check {
   display: block;
-  
   margin-bottom: 13px;
 }
 
+.check {
+  padding-left: 20px;
+    &__input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: (0 0 0 0);
+    }
 
-.check__input {
-position: absolute;
-width: 1px;
-height: 1px;
-overflow: hidden;
-clip: (0 0 0 0);
-border: 1px solid red;
+    &__box {
+      position: absolute;
+      background: #FFFFFF;
+      margin-top: 0px;
+      margin-left: -20px;
+      /* Primary Color */
+      width: 20px;
+      height: 20px;
+      border: 1px solid #BC9CFF;
+      box-sizing: border-box;
+      border-radius: 4px;
+      }
+
+    &__text {
+      margin-left: 10px;
+      @include type__text_body;
+      line-height: 18px;
+      max-width: 192px;
+    }
+
+    &__input:checked + &__box {
+    fill: white;
+    background: url("checked.svg") center no-repeat;
+    }
 }
-.check__box {
-position: absolute;
-background: #FFFFFF;
-margin-top: 0px;
-margin-left: -20px;
-
-/* Primary Color */
-width: 20px;
-height: 20px;
-border: 1px solid #BC9CFF;
-box-sizing: border-box;
-border-radius: 4px;
-}
-
-.check__text {
-  margin-left: 10px;
-  @include type__text_body;
-  line-height: 18px;
-  max-width: 192px;
-}
-
-.check__input:checked + .check__box {
-fill: white;
-background: url("checked.svg") center no-repeat;
-
+ //radio-button
+//--------------------------------------------------------------
+.form-element__check-button__heading {
+  border: 1px solid red;
 }
 
 
+ //toggle-button
+//--------------------------------------------------------------
 
-
-
+.toggle {
+  max-width: 270px;
+  border: 1px solid blue;
+}
 
 
 .toggle-button {
@@ -201,7 +235,9 @@ background: url("checked.svg") center no-repeat;
   height: 100%;
   box-sizing: inherit;
 
-
+  &__text {
+    padding-left: 10px;
+  }
 //toggle code begins!
 &__label {
   background: white;
@@ -247,6 +283,7 @@ background: url("checked.svg") center no-repeat;
   }
 }
 
+//* rating button
 $stars: 5;
 $star-size: 24px;
 $star-spacing: 2px;
@@ -255,7 +292,6 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 .rate-button {
 	width: ($star-size * $stars) + ($star-spacing * ($stars - 1));
 	height: $star-size;
-
 
 	label {
 		float: right;
@@ -283,14 +319,21 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	}
 	
 	input:checked ~ label:before,
-	&:not(:checked) > label:hover:before,
-	&:not(:checked) > label:hover ~ label:before {
+	input:not(:checked) > label:hover:before,
+	input:not(:checked) > label:hover ~ label:before {
     content: "star";
     background: $star-color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 	}
 }
+
+.rate-button__all-colors {
+  @extend .rate-button;
+
+}
+
+
 
 
 
