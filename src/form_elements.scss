@@ -224,20 +224,27 @@ position: relative;
   border: 1px solid red;
 }
 
+.radio-buttons {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid blue;
+}
+
 .radio-buttons-gender {
+  margin-right: 20px;
   &__input:checked,
   &__input:not(:checked) {
       position: absolute;
       left: -9999px;
   }
   &__input:checked + &__label,
-  &__input:not(:checked) + &__label
-  {
+  &__input:not(:checked) + &__label {
+      display: inline-block;
       position: relative;
       padding-left: 30px;
       cursor: pointer;
       line-height: 20px;
-      display: inline-block;
+      
   
   }
   &__input:checked + &__label:before,
@@ -256,13 +263,12 @@ position: relative;
   &__input:checked + &__label:after,
   &__input:not(:checked) + &__label:after {
       content: '';
-      width: 10px;
-      height: 10px;
-      background: linear-gradient(to top, #BC9CFF 0%, #8BA4F9 100%);
-     
       position: absolute;
       top: 5px;
       left: 5px;
+      width: 10px;
+      height: 10px;
+      background: linear-gradient(to top, #BC9CFF 0%, #8BA4F9 100%);
       border-radius: 100%;
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
