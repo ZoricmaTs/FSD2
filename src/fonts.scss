@@ -73,11 +73,12 @@ font-family: Montserrat, Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
-line-height: 24px;
+
 }
 
 .type__text_body {
 	@include type__text_body;
+	line-height: 24px;
 } 
 
 @font-face {
