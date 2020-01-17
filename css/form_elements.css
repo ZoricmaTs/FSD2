@@ -9,6 +9,7 @@ box-sizing: border-box;
 }
   
 .logo__toxin {
+  display: inline-block;
   background-image: url("\logo_toxin.svg");
   width: 48px;
   height: 48px;

@@ -7,6 +7,7 @@ padding: 140px;
 }
 
 .form-elements__fields {
+  max-width: 320px;
   border: 1px solid green;
 }
 
@@ -168,6 +169,10 @@ position: relative;
   border: 1px solid blue;
 }
 
+.form-elements__check-button {
+  max-width: 300px;
+}
+
 .form-element__check-button__heading {
   margin-bottom: 16px;
 }
@@ -219,6 +224,62 @@ position: relative;
   border: 1px solid red;
 }
 
+.radio-buttons-gender {
+  &__input:checked,
+  &__input:not(:checked) {
+      position: absolute;
+      left: -9999px;
+  }
+  &__input:checked + &__label,
+  &__input:not(:checked) + &__label
+  {
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+      line-height: 20px;
+      display: inline-block;
+  
+  }
+  &__input:checked + &__label:before,
+  &__input:not(:checked) + &__label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #BC9CFF;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 10px;
+  }
+  &__input:checked + &__label:after,
+  &__input:not(:checked) + &__label:after {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background: linear-gradient(to top, #BC9CFF 0%, #8BA4F9 100%);
+     
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      border-radius: 100%;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  }
+  &__input:not(:checked) + &__label:after {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+  }
+  &__input:checked + &__label:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  
 
  //toggle-button
 //--------------------------------------------------------------
