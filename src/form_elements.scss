@@ -164,6 +164,12 @@ position: relative;
 
 //checkbox-buttons общие
 //--------------------------------------------------------------
+
+.form-elements__check-buttons {
+  border: 1px solid green;
+  max-width: 222px;
+}
+
 .checkbox-buttons {
   max-width: 222px;
   border: 1px solid blue;
