@@ -408,12 +408,26 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 
 //* buttons------------------------------------------------------------------
+.form-element__button {
+
+  max-width: 218px;
+}
+
+.form-element__button-column {
+
+}
+
 
 .button {
-  @include type__text_h3;
-  border-radius: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
 
-  
+.btn {
+  text-decoration: none;
+  @include type__text_h3;
 }
 
 .btn__high {
@@ -430,28 +444,14 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 .btn__long {
   max-width: 316px;
 }
-/*
-@mixin color_purple-gradient {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  color: white;
-   &:focus {
-    opacity: 0.5;
-   }
-   &:hover {
-    opacity: 0.5;
-   }
-}*/
-
 
 .btn__color_purple-gradient {
 	background-image: linear-gradient(to bottom, #BC9CFF 0%, #8BA4F9 100%);
-	
   box-sizing: border-box;
 	border-radius: 22px; /**/
 	display: block;
   padding: 2px; /*рамка */
 	position: relative;
-  text-decoration: none;
 	z-index: 2;
     &:hover, &:focus {
       background-image:  linear-gradient(to bottom, rgba(188, 156, 255,0.5) 0%,
@@ -476,7 +476,6 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	display: block;
 	padding: 2px; /*рамка */
 	position: relative;
-  text-decoration: none;
 	z-index: 2;
     &:hover, &:focus {
       background-image:  linear-gradient(to bottom, rgba(188, 156, 255,0.5) 0%,
@@ -484,9 +483,7 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   }
 }
 
-.btn__text {
-  @include type__text_h3;
-}
+
 
 .btn__text_color_purple {
 	align-items: center;
@@ -505,3 +502,15 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   background-image:  linear-gradient(to bottom, rgba(188, 156, 255,0.5) 0%,
   rgba(139, 164, 249,0.5) 100%);
 }
+
+.btn__text-link {
+  max-width: 95px;
+  &:hover, &:focus {
+    color: $color_shade50;
+  }
+}
+
+.btn__text-link_hover-focus {
+  color: $color_shade50;
+}
+
