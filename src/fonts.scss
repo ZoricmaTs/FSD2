@@ -1,3 +1,4 @@
+@import "colors.scss";
 @font-face {
 	font-family: Montserrat;
 	src: url(../fonts/montserrat-regular-webfont.ttf),
@@ -60,7 +61,7 @@ font-family: Montserrat, Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
-line-height: 15px;
+/*line-height: 15px;*/ //*TODO пересмотреть сей момент! тк в кнопках высота задана сиим параметром!!!
 text-transform: uppercase;
 }
 
@@ -75,10 +76,11 @@ font-weight: normal;
 font-size: 14px;
 
 }
-
+//*TODO разобраться с line-height и color
 .type__text_body {
 	@include type__text_body;
 	line-height: 24px;
+	color: $color_dark-shade75;
 } 
 
 @font-face {

@@ -4,7 +4,6 @@
 			<meta charset="utf-8">
 			<link rel="stylesheet" href="./colors.scss" />
 			<link rel="stylesheet" href="./fonts.scss" />
-			<link rel="stylesheet" href="./btn.scss" />
 			<link rel="stylesheet" href="./form_elements.scss" />
 			<link rel="stylesheet" type="text/css" href="../css/form_elements.css">
 			<link rel="stylesheet" href="../node_modules/air-datepicker/dist/css/datepicker.min.css" />
@@ -167,11 +166,59 @@
 			</article>
 			<article class="form-elements__buttons">
 				<div class="form-element__button">
-					<div class="form-element__button__heading">
-						<h3 class="type__text_h3">Range Slider</h3>
-					</div>
+					<label for="dayscount"><h3 class="type__text_h3">Range Slider</h3></label>
+					<input type="range" id="dayscount" name="dayscount" min="1000" max="15000" step="1"> 
 				</div>
-				<div class="form-element__button"></div>
+
+<!--				<section class="range-slider js-range-slider">
+					<div class="range-slider__header">
+						<div class="range-slider__label">
+							<h3 class="heading heading_type_h3">range slider</h3>
+						</div>
+						<input class="range-slider__price js-range-slider__price" type="text" readonly="">
+					</div>
+					<div class="range-slider__inner">
+						<span class="irs irs--flat js-irs-0">
+							<span class="irs">
+								<span class="irs-line" tabindex="0"></span>
+								<span class="irs-min" style="display: none;">0</span>
+								<span class="irs-max" style="display: none;">1</span>
+								<span class="irs-from" style="display: none; left: 0%;">0</span>
+								<span class="irs-to" style="display: none; left: 0%;">0</span>
+								<span class="irs-single" style="display: none; left: 0%;">0</span>
+							</span>
+							<span class="irs-grid"></span>
+							<span class="irs-bar" style="left: 2.62172%; width: 71.5344%;"></span>
+							<span class="irs-shadow shadow-from" style="display: none;"></span>
+							<span class="irs-shadow shadow-to" style="display: none;"></span>
+							<span class="irs-handle from" style="left: 0%;">
+								<i></i>
+								<i></i>
+								<i></i>
+							</span>
+							<span class="irs-handle to type_last" style="left: 71.5344%;">
+								<i></i>
+								<i></i>
+								<i></i>
+							</span>
+						</span>
+						<input class="range-slider__slider js-range-slider__slider irs-hidden-input" data-type="double" data-min="1000" data-max="15000" data-step="1" data-from="5000" data-to="10000" data-hide-min-max="true" data-hide-from-to="true" tabindex="-1" readonly="">
+					</div>
+				</section> --->
+
+
+				<div class="form-element__button buttons">
+					<a class="button btn__high btn__short btn__color_purple-gradient">
+						<span class="btn__text btn__text_color_white">click me</span></a>
+					<a class="button btn btn__high btn__short btn__color_white" href="#">
+						<span class="btn__text btn__text_color_purple">click me</span>
+					</a>
+					<a class="button btn__high btn__short btn__color_purple-gradient btn__color-hover-focus_purple-gradient">
+						<span class="btn__text btn__text_color_white">click me</span></a>
+					<a class="button btn btn__high btn__short btn__color_white btn__color-hover-focus_white" href="#">
+						<span class="btn__text btn__text_color_purple">click me</span>
+					</a>
+				</div>
 				<div class="form-element__button"></div>
 			</article>
 		</body>
