@@ -408,15 +408,21 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 
 //* buttons------------------------------------------------------------------
+
+
 .form-element__button {
-
-  max-width: 218px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 320px;
+  border: 1px solid green;
 }
 
-.form-element__button-column {
-
+.form-element__button-row {
+  display: flex;
+  min-width: 110px;
+  flex-direction: row;
 }
-
 
 .button {
   padding-left: 20px;
@@ -503,14 +509,15 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   rgba(139, 164, 249,0.5) 100%);
 }
 
-.btn__text-link {
+.btn__text-link__color_purple {
   max-width: 95px;
+  color: $color_purple;
   &:hover, &:focus {
     color: $color_shade50;
   }
 }
 
-.btn__text-link_hover-focus {
+.btn__text-link__color_hover-focus {
   color: $color_shade50;
 }
 
