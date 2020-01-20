@@ -123,7 +123,7 @@ padding: 140px;
 position: relative;
   &:before {
     left: 220px;
-    top: 15px;
+    top: 12px;
     @include material-icons;
     @include icon-arrow;
     z-index: 10;
@@ -420,7 +420,7 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 .form-element__button-row {
   display: flex;
-  min-width: 110px;
+  max-width: 320px;
   flex-direction: row;
 }
 
@@ -444,11 +444,11 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 
 .btn__short {
-  max-width: 95px;
+  min-width: 95px;
 }
 
 .btn__long {
-  max-width: 316px;
+  min-width: 316px;
 }
 
 .btn__color_purple-gradient {
@@ -521,3 +521,16 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   color: $color_shade50;
 }
 
+.btn__long {
+position: relative;
+&:before {
+  left: 270px;
+  top: -1px;
+  @include material-icons;
+  @include icon-arrow;
+  z-index: 10;
+  content: "arrow_forward";
+  color: white;
+  border: 1px solid red;
+  }   
+}
