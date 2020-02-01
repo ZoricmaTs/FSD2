@@ -66,9 +66,11 @@ text-transform: uppercase;
 }
 
 .type__text_h3 {
-	@include type__text_h3;
-	font-weight: bold;
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-size: 12px;
 	text-transform: uppercase;
+	font-weight: bold;
 } 
 
 @mixin type__text_body {
@@ -134,4 +136,47 @@ font-size: 14px;
 	width: 44px;
 	text-align: center;
 	vertical-align: middle;
+}
+.type-text {
+	font-style: normal;
+	&__h1 {
+		font-family: Quicksand, "Open Sans", Arial, sans-serif;
+		font-size: 24px;
+	}
+	&__h1_bold {
+		font-weight: bold;
+	}
+	&__h1_normal {
+		font-weight: normal;
+	}
+	&__h2 {
+		font-family: Quicksand, "Open Sans", Arial, sans-serif;	
+	}
+	&__h2_bold {
+		font-weight: bold;
+	}
+	&__h2_normal {
+		font-weight: normal;
+	}
+	&__h3-bold {
+		font-family: Montserrat, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&__h3-normal {
+		font-family: Montserrat, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+	}
+	&__body {
+		font-family: Montserrat, Arial, Helvetica, sans-serif;
+	}
+	&__body_bold {
+		font-weight: bold;
+	}
+	&__body_normal {
+		font-weight: normal;
+	}
+
 }
