@@ -3,7 +3,11 @@
 
 body {
 padding: 140px;
+}
 
+.form-elements__row {
+  display: flex;
+  flex-direction: row;
 }
 
 .form-elements__fields {
@@ -81,7 +85,6 @@ padding: 140px;
         z-index: 4;
         content: "keyboard_arrow_down";
         color: $color_shade50;
-        border: 1px solid red;
       }
 
   }
@@ -91,7 +94,7 @@ padding: 140px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 320px;
+    width: 320px;
   }
 
   .dropdown-date__input {
@@ -104,8 +107,6 @@ padding: 140px;
         z-index: 10;
         content: "keyboard_arrow_down";
         color: $color_shade50;
-    
-        border: 1px solid red;
       }
   }
 
@@ -129,7 +130,6 @@ position: relative;
     z-index: 10;
     content: "keyboard_arrow_down";
     color: $color_shade50;
-    border: 1px solid red;
   }    
 }
 
@@ -152,7 +152,6 @@ position: relative;
     background: linear-gradient(to bottom, $color_purple 0%, #8BA4F9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border: 1px solid red;
   }   
 }
 
@@ -227,17 +226,20 @@ position: relative;
  //radio-button
 //--------------------------------------------------------------
 .form-element__check-button__heading {
-  border: 1px solid red;
+
 }
 
 .radio-buttons {
   display: flex;
   flex-direction: row;
-  border: 1px solid blue;
 }
 
 .radio-buttons-gender {
-  margin-right: 20px;
+  margin-bottom: 36px;
+  &__label {
+    margin-right: 20px;
+  };
+
   &__input:checked,
   &__input:not(:checked) {
       position: absolute;
@@ -245,13 +247,11 @@ position: relative;
   }
   &__input:checked + &__label,
   &__input:not(:checked) + &__label {
-      display: inline-block;
       position: relative;
+      display: inline-block; 
       padding-left: 30px;
       cursor: pointer;
       line-height: 20px;
-      
-  
   }
   &__input:checked + &__label:before,
   &__input:not(:checked) + &__label:before {
@@ -268,13 +268,13 @@ position: relative;
   }
   &__input:checked + &__label:after,
   &__input:not(:checked) + &__label:after {
-      content: '';
       position: absolute;
       top: 5px;
       left: 5px;
+      content: '';
       width: 10px;
       height: 10px;
-      background: linear-gradient(to bottom #BC9CFF 0%, #8BA4F9 100%);
+      background: linear-gradient(to top, #BC9CFF 0%, #8BA4F9 100%);
       border-radius: 100%;
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
@@ -290,7 +290,6 @@ position: relative;
       transform: scale(1);
     }
   }
-  
   
 
  //toggle-button
@@ -538,19 +537,17 @@ position: relative;
   z-index: 10;
   content: "arrow_forward";
   color: white;
-  border: 1px solid red;
   }   
 }
 
 //* pagination------------------------------------------------------------------
-.pagination__text {
+.form-element__button-heading {
   margin-bottom: 15px;
 }
 
 .pagination {
 	display: flex;
 	flex-direction: row;
-	border: 1px solid blue;
   max-width: 241px;
   margin-bottom: 10px;
   @include type__text_h3;
