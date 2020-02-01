@@ -1,33 +1,34 @@
 @import "colors.scss";
 @font-face {
 	font-family: Montserrat;
-	src: url(../fonts/montserrat-regular-webfont.ttf),
-		 url(../fonts/montserrat-regular-webfont.svg),
-		 url(../fonts/montserrat-regular-webfont.woff);
+	src: url(/fonts/montserrat-regular-webfont.ttf),
+		 url(/fonts/montserrat-regular-webfont.svg),
+		 url(/fonts/montserrat-regular-webfont.woff);
 	font-style: normal;
 	font-weight: 400;
 }
 @font-face {
 	font-family: Montserrat;
-	src: url(../fonts/montserrat-bold-webfont.ttf),
-		 url(../fonts/montserrat-bold-webfont.svg),
-		 url(../fonts/montserrat-bold-webfont.woff);
+	src: url(/fonts/montserrat-bold-webfont.ttf),
+		 url(/fonts/montserrat-bold-webfont.svg),
+		 url(/fonts/montserrat-bold-webfont.woff);
 	font-style: normal;
 	font-weight: 700;
 }
+
 @font-face {
 	font-family: Quicksand;
-	src: url(../fonts/quicksand-regular-webfont.ttf),
-		 url(../fonts/quicksand-regular-webfont.svg),
-		 url(../fonts/quicksand-regular-webfont.woff);
+	src: url(/fonts/quicksand-regular-webfont.ttf),
+		 url(/fonts/quicksand-regular-webfont.svg),
+		 url(/fonts/quicksand-regular-webfont.woff);
 	font-style: normal;
 	font-weight: 400;
 }
 @font-face {
 	font-family: Quicksand;
-	src: url(../fonts/quicksand-bold-webfont.ttf),
-		 url(../fonts/quicksand-bold-webfont.svg),
-		 url(../fonts/quicksand-bold-webfont.woff);
+	src: url(/fonts/quicksand-bold-webfont.ttf),
+		 url(/fonts/quicksand-bold-webfont.svg),
+		 url(/fonts/quicksand-bold-webfont.woff);
 	font-style: normal;
 	font-weight: 700;
 }
@@ -59,7 +60,6 @@ line-height: 24px;
 @mixin type__text_h3 {
 font-family: Montserrat, Arial, Helvetica, sans-serif;
 font-style: normal;
-font-weight: bold;
 font-size: 12px;
 /*line-height: 15px;*/ //*TODO пересмотреть сей момент! тк в кнопках высота задана сиим параметром!!!
 text-transform: uppercase;
@@ -67,32 +67,32 @@ text-transform: uppercase;
 
 .type__text_h3 {
 	@include type__text_h3;
+	font-weight: bold;
+	text-transform: uppercase;
 } 
 
 @mixin type__text_body {
 font-family: Montserrat, Arial, Helvetica, sans-serif;
 font-style: normal;
-font-weight: normal;
 font-size: 14px;
-
 }
 //*TODO разобраться с line-height и color
 .type__text_body {
 	@include type__text_body;
+	font-weight: normal;
 	line-height: 24px;
-	color: $color_dark-shade75;
 } 
 
 @font-face {
 	font-family: 'Material Icons';
 	font-style: normal;
 	font-weight: 400;
-	src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+	src: url(/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
 	src: local('Material Icons'),
 	  local('MaterialIcons-Regular'),
-	  url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
-	  url(../fonts/MaterialIcons-Regular.woff) format('woff'),
-	  url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+	  url(/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+	  url(/fonts/MaterialIcons-Regular.woff) format('woff'),
+	  url(/fonts/MaterialIcons-Regular.ttf) format('truetype');
   }
 
   @mixin material-icons {
@@ -120,9 +120,10 @@ font-size: 14px;
     font-feature-settings: 'liga';
   }
 
-	.material-icons {
-		@include material-icons;
-} 
+.material-icons {
+	@include material-icons;
+};
+
 @mixin icon-arrow {
     font-family: 'Material Icons';
 	position: absolute;

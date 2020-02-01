@@ -1,0 +1,36 @@
+@import "../colors.scss";
+@import "../fonts.scss";
+
+ //text field, masked text field
+//--------------------------------------------------------------
+
+/*TODO поменять !default*/
+/*TODO сделать отдельно &__элемент !!*/
+@mixin input-form {
+    max-width: 320px;
+    padding-left: 15px;
+    width: 100%;
+    line-height: 44px;
+    background: #FFFFFF;
+    color: $color_light-shade25;
+    border: 1px solid $color_light-shade25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+     &:hover {
+      outline: none;
+      color: $color_dark-shade75;
+      border: 1px solid $color_dark-shade75;
+     }
+     &:focus {
+      outline: none;
+      color: $color_dark-shade75;
+      border: 1px solid $color_dark-shade75;
+     }
+  }
+
+  .text-field__input {
+    @include input-form;
+  }
+
+

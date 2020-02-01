@@ -3,13 +3,16 @@
 		<head>
 			<meta charset="utf-8">
 			<link rel="stylesheet" href="./colors.scss" />
-			<link rel="stylesheet" href="./fonts.scss" />
+			<link rel="stylesheet" href="./fonts.scss" />		
 			<link rel="stylesheet" href="./form_elements.scss" />
+			<link rel="stylesheet" href="./form_elements/text-fields.scss" />
+			<link rel="stylesheet" href="./form_elements/dropdown.scss" />
 			<link rel="stylesheet" type="text/css" href="../css/form_elements.css">
-			<link rel="stylesheet" href="../node_modules/air-datepicker/dist/css/datepicker.min.css" />
-
+			<!--<link rel="stylesheet" href="../node_modules/air-datepicker/dist/css/datepicker.min.css" />
+-->
 			<script src="../node_modules/jquery/dist/jquery.js" type="text/javacsript"></script>	
-			<script src="../node_modules/air-datepicker/dist/js/datepicker.min.js" type="text/javacsript"></script>
+			<script src="../node_modules/air-datepicker/dist/js/datepicker.min.js" type="text/javacsri
+			pt"></script>
 		</head>	
 		<body>
 			<section class="logo">
@@ -34,7 +37,7 @@
 							<h3 class="type__text_h3">dropdown</h3>
 						</div>
 						<section class="dropdown__field">		
-							<div class="dropdown__select">сколько гостей</div>
+							<div class="dropdown__select type__text_body">сколько гостей</div>
 						</section>
 					</div>
 					<div class="form-element__field text-field">
@@ -86,17 +89,23 @@
 						<label class="check option-check">
 							<input class="check__input" type="checkbox">
 							<span class="check__box"></span>
-							<div class="check__text">Можно курить</div>						
+							<div class="check__text">
+								<span class="type__text_body">Можно курить</span>	
+							</div>				
 						</label>
 						<label class="check option-check">
 							<input class="check__input" type="checkbox" checked>
 							<span class="check__box"></span>
-							<div class="check__text">Можно с питомцами</div>						
+							<div class="check__text">
+								<span class="type__text_body">Можно с питомцами</span>
+							</div>
 						</label>
 						<label class="check option-check">
 							<input class="check__input" type="checkbox" checked>
 							<span class="check__box"></span>
-							<div class="check__text">Можно пригласить гостей (до 10 человек)</div>						
+							<div class="check__text">
+								<span class="type__text_body">Можно пригласить гостей (до 10 человек)</span>	
+							</div>				
 						</label>	
 					</div>
 					<div class="form-element__check-button radio">
@@ -272,6 +281,37 @@
 						</div>
 					</div>
 				</article>
+			</section>
+			<section class="form-elements__row">
+				<div class="form-element__check-button checkbox-buttons">
+					<div class="form-element__check-button__heading">
+						<h3 class="type__text_h3">rich Checkbox Buttons</h3>
+					</div>
+					<label class="check option-check">
+						<input class="check__input" type="checkbox">
+						<span class="check__box"></span>
+						<div class="check__text">
+							<span class="check__text_bold type__text_body">Широкий коридор</span>
+							<span class="check__text_normal">Ширина коридоров в номере не менее 91 см.</span>
+						</div>						
+					</label>
+					<label class="check option-check">
+						<input class="check__input" type="checkbox">
+						<span class="check__box"></span>
+						<div class="check__text">
+							<span class="check__text_bold type__text_body">Помощник для инвалидов</span>	
+							<span class="check__text_normal">На 1 этаже вас встретит специалист  и проводит до номера.</span>
+						</div>								
+					</label>
+				</div>
+				<div class="form-element__billet-list">
+					<div class="form-element__billet-list-heading">
+						<h3 class="type__text_h3">bullet list</h3>
+					</div>
+				</div>
+			</section>
+			<section class="form-elements__row">
+				
 			</section>
 		</body>
 			
