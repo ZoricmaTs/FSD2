@@ -127,7 +127,7 @@
 					<div class="toggle-button">
 						<label class="toggle-button__label" for="subscription-field">
 							<input class="toggle-button__input" type="checkbox" name="subscription" id="subscription-field" />
-								<div class="toggle-button__switch"></div>
+							<div class="toggle-button__switch"></div>
 						</label>
 						<span class="toggle-button__text type__text_body">Получать спецпредложения</span>
 					</div>
@@ -208,27 +208,28 @@
 
 
 				<div class="form-element__button buttons">
+					<h3 class="form-element__button-text type__text_h3">buttons</h3>
 					<div class="form-element__button-row">
-						<a class="button btn btn__high btn__short btn__color_purple-gradient">
+						<a class="form-element__button-column btn btn__high btn__short btn__color_purple-gradient">
 							<span class="btn__text btn__text_color_white">click me</span>
 						</a>
-						<a class="button btn btn__high btn__short btn__color_purple-gradient btn__color-hover-focus_purple-gradient">
+						<a class="form-element__button-column btn btn__high btn__short btn__color_purple-gradient btn__color-hover-focus_purple-gradient">
 							<span class="btn__text btn__text_color_white">click me</span>
 						</a>
 					</div>	
 					<div class="form-element__button-row">
-						<a class="button btn btn__high btn__short btn__color_white" href="#">
+						<a class="form-element__button-column btn btn__high btn__short btn__color_white" href="#">
 							<span class="btn__text btn__text_color_purple">click me</span>
 						</a>
-						<a class="button btn btn__high btn__short btn__color_white btn__color-hover-focus_white" href="#">
+						<a class="form-element__button-column btn btn__high btn__short btn__color_white btn__color-hover-focus_white" href="#">
 							<span class="btn__text btn__text_color_purple">click me</span>
 						</a>
 					</div>
 					<div class="form-element__button-row">
-						<a class="btn btn__high btn__short" href="#">
+						<a class="form-element__button-column btn btn__high btn__short" href="#">
 							<span class="btn__text btn__text-link__color_purple">click me</span>
 						</a>
-						<a class="btn btn__high btn__short" href="#">
+						<a class="form-element__button-column btn btn__high btn__short" href="#">
 							<span class="btn__text btn__text-link__color_purple btn__text-link__color_hover-focus">click me</span>
 						</a>
 					</div>
@@ -238,8 +239,37 @@
 						</button>
 					</div>
 				</div>
-				<div class="form-element__button paginator">
-				
+				<div class="form-element__button pagination-form">
+					<h3 class="pagination__text type__text_h3">pagination</h3>
+					<ul class="pagination">
+						<li class="pagination__item">
+							<a class="pagination__link pagination__link_current" href="#1">1</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#2">2</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#3">3</a>
+						</li>
+						<li class="pagination__item">
+							<span class="pagination__hellip">&hellip;</span>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#15">15</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link pagination__link-next" href="#next">
+							</a>
+						</li>
+					</ul>
+					<div class="pagination-description type__text_body"> 
+						<span class="pagination-description__start-number">1</span>
+						<span class="pagination-description__text"> – </span>
+						<span class="pagination-description__end-number">12</span>
+						<span class="pagination-description__text"> из </span>
+						<span class="pagination-description__all-numbers">100+</span>					 
+						<span class="pagination-description__text"> вариантов аренды</span>										
+					</div>
 				</div>
 			</article>
 		</body>

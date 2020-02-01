@@ -408,7 +408,9 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 
 //* buttons------------------------------------------------------------------
-
+.form-element__button-text {
+  margin-bottom: 16px;
+}
 
 .form-element__button {
   display: flex;
@@ -420,16 +422,21 @@ $star-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 
 .form-element__button-row {
   display: flex;
-  max-width: 320px;
   flex-direction: row;
+  max-width: 320px;
+  margin-bottom: 30px;
 }
 
+.form-element__button-column {
+  margin-right: 20px;
+}
+/*
 .button {
   padding-left: 20px;
   padding-right: 20px;
   margin-right: 20px;
   margin-bottom: 30px;
-}
+}*/
 
 .btn {
   text-decoration: none;
@@ -534,3 +541,64 @@ position: relative;
   border: 1px solid red;
   }   
 }
+
+//* pagination------------------------------------------------------------------
+.pagination__text {
+  margin-bottom: 15px;
+}
+
+.pagination {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid blue;
+  max-width: 241px;
+  margin-bottom: 10px;
+  @include type__text_h3;
+  font-weight: normal;
+    &__item {
+      list-style: none; 
+    };
+    &__link {
+      display: block;
+      text-decoration: none;
+      line-height: 40px;
+      text-align: center;
+      width: 40px;
+      color: rgba(31,32,65,0.5);
+      width: 40px;
+      height: 40px;
+        &:hover {
+          font-weight: bold;
+          color: white;
+          background: linear-gradient(to bottom, #6FCF97 0%, #66D2EA 100%);
+          border-radius: 22px;
+        };    
+    };
+    &__link_current {
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(to bottom, #BC9CFF 0%, #8BA4F9 100%);
+      border-radius: 22px;
+    };     
+    &__hellip {
+      display: block;
+      text-align: center;
+      color: $color_shade50;
+      width: 40px;
+      line-height: 40px;
+    };
+    &__link-next {
+      position: absolute;
+      &:before {
+        position: relative;
+        @include material-icons;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+        content: "arrow_forward";
+        line-height: 40px;
+        width: 40px;
+        } 
+      
+    }
+};
