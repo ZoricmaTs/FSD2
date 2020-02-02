@@ -12,7 +12,8 @@
 			<link rel="stylesheet" href="./form_elements/radio-button.scss" />
 			<link rel="stylesheet" href="./form_elements/toggle.scss" />
 			<link rel="stylesheet" href="./form_elements/like-button.scss" />
-			
+			<link rel="stylesheet" href="./form_elements/rate-button.scss" />
+			<link rel="stylesheet" href="./form_elements/buttons.scss" />
 			<link rel="stylesheet" type="text/css" href="../css/form_elements.css"/>
 			<!--<script src="../node_modules/jquery/dist/jquery.js" type="text/javacsript"></script>
     <script src="import-jquery.js"></script>-->
@@ -87,7 +88,7 @@
 				</article>
 				<article class="form-elements__check-buttons">
 					<div class="form-element__check-button checkbox-buttons">
-						<div class="form-element__check-button__heading">
+						<div class="form-element__check-button_heading">
 							<h3 class="type-text__h3-bold">Checkbox Buttons</h3>
 						</div>
 						<label class="check option-check">
@@ -113,7 +114,7 @@
 						</label>	
 					</div>
 					<div class="form-element__check-button radio">
-						<div class="form-element__check-button__heading">
+						<div class="form-element__check-button_heading">
 							<h3 class="type-text__h3-bold">Radio Buttons</h3>
 						</div>
 						<div class="radio-buttons">
@@ -128,7 +129,7 @@
 						</div>
 					</div>
 					<div class="form-element__check-button toggle">
-						<div class="form-element__check-button__heading">
+						<div class="form-element__check-button_heading">
 							<h3 class="type-text__h3-bold">toggle</h3>
 						</div>
 						<div class="toggle-button">
@@ -147,17 +148,16 @@
 						</div>
 					</div>
 					<div class="form-element__check-button like-buttons">
-						<div class="form-element__check-button__heading">
+						<div class="form-element__check-button_heading">
 							<h3 class="type-text__h3-bold">like button</h3>
 						</div>
-
-						<button class="heart">
+						<button class="form-element__check-button-like heart">
 							<span class="likes-number">2</span>
 						</button>
 						<script src="form_elements/like-button.js"></script>
 					</div>
 					<div class="form-element__check-button rate-buttons">
-						<div class="form-element__check-button__heading">
+						<div class="form-element__check-button_heading">
 							<h3 class="type-text__h3-bold">rate button</h3>
 						</div>
 						<div class="form-element__check-button-row">
@@ -172,10 +172,10 @@
 					</div>
 				</article>
 				<article class="form-elements__buttons">
-					<div class="form-element__button">
+					<!--div class="form-element__button">
 						<label for="dayscount"><h3 class="type-text__h3-bold">Range Slider</h3></label>
 						<input type="range" id="dayscount" name="dayscount" min="1000" max="15000" step="1"> 
-					</div>
+					</div-->
 	<!--			<section class="range-slider js-range-slider">
 						<div class="range-slider__header">
 							<div class="range-slider__label">
@@ -215,31 +215,31 @@
 						<h3 class="form-element__button-text type-text__h3-bold">buttons</h3>
 						<div class="form-element__button-row">
 							<a class="form-element__button-column btn btn__high btn__short btn__color_purple-gradient">
-								<span class="btn__text btn__text_color_white">click me</span>
+								<span class="type-text__h3-bold btn__text btn__text_color_white">click me</span>
 							</a>
 							<a class="form-element__button-column btn btn__high btn__short btn__color_purple-gradient btn__color-hover-focus_purple-gradient">
-								<span class="btn__text btn__text_color_white">click me</span>
+								<span class="type-text__h3-bold btn__text btn__text_color_white">click me</span>
 							</a>
 						</div>	
 						<div class="form-element__button-row">
 							<a class="form-element__button-column btn btn__high btn__short btn__color_white" href="#">
-								<span class="btn__text btn__text_color_purple">click me</span>
+								<span class="type-text__h3-bold btn__text btn__text_color_purple">click me</span>
 							</a>
 							<a class="form-element__button-column btn btn__high btn__short btn__color_white btn__color-hover-focus_white" href="#">
-								<span class="btn__text btn__text_color_purple">click me</span>
+								<span class="type-text__h3-bold btn__text btn__text_color_purple">click me</span>
 							</a>
 						</div>
 						<div class="form-element__button-row">
 							<a class="form-element__button-column btn btn__high btn__short" href="#">
-								<span class="btn__text btn__text-link__color_purple">click me</span>
+								<span class="type-text__h3-bold btn__text btn__text-link__color_purple">click me</span>
 							</a>
 							<a class="form-element__button-column btn btn__high btn__short" href="#">
-								<span class="btn__text btn__text-link__color_purple btn__text-link__color_hover-focus">click me</span>
+								<span class="type-text__h3-bold btn__text btn__text-link__color_purple btn__text-link__color_hover-focus">click me</span>
 							</a>
 						</div>
 						<div class="form-element__button-row">
 							<button class="btn btn__high btn__long btn__color_purple-gradient">
-								<span class="btn__text btn__text_color_white">перейти к оплате</span>
+								<span class="type-text__h3-bold btn__text btn__text_color_white">перейти к оплате</span>
 							</button>
 						</div>
 					</div>
@@ -281,7 +281,7 @@
 			</section>
 			<section class="form-elements__row">
 				<div class="form-element__check-button checkbox-buttons">
-					<div class="form-element__check-button__heading">
+					<div class="form-element__check-button_heading">
 						<h3 class="type-text__h3-bold">rich Checkbox Buttons</h3>
 					</div>
 					<label class="check option-check">

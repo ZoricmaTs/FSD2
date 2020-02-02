@@ -1,0 +1,105 @@
+@import "../colors.scss";
+@import "../fonts.scss";
+
+
+.btn {
+  text-decoration: none;
+  height: 44px;
+}
+
+.btn__high {
+  line-height: 40px;
+}
+.btn__low {
+  line-height: 30px;
+}
+
+.btn__short {
+  min-width: 95px;
+}
+
+.btn__long {
+  min-width: 316px;
+}
+
+.btn__color_purple-gradient {
+  
+	background-image: linear-gradient(to bottom, #BC9CFF 0%, #8BA4F9 100%);
+  box-sizing: border-box;
+	border-radius: 22px; /**/
+	display: block;
+  padding: 2px; /*рамка */
+	position: relative;
+	z-index: 2;
+    &:hover, &:focus {
+      background-image:  linear-gradient(to bottom, rgba(188, 156, 255,0.5) 0%,
+                                               rgba(139, 164, 249,0.5) 100%);
+  }
+}
+
+.btn__text_color_white {  
+	align-items: center;
+  color: white;
+  line-height: 44px;
+	/*внешний радиус*/
+	display: flex;
+	justify-content: center;
+	transition: background .5s ease;
+}
+
+
+.btn__color_white {
+	background-image: linear-gradient(to bottom, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px; /*внутренний радиус*/ /*разница между кнопками*/
+  box-sizing: border-box;
+	display: block;
+	padding: 2px; /*рамка */
+	position: relative;
+	z-index: 2;
+    &:hover, &:focus {
+      background-image:  linear-gradient(to bottom, rgba(188, 156, 255,0.5) 0%,
+                                               rgba(139, 164, 249,0.5) 100%);
+  }
+}
+
+.btn__text_color_purple {
+  align-items: center;
+  line-height: 41px;
+  background: white; /*разница между кнопками*/
+  color: #BC9CFF;
+	border-radius: 22px; 
+	display: flex;
+	justify-content: center;
+	transition: background .5s ease;
+}
+
+.btn__color-hover-focus_white, 
+.btn__color-hover-focus_purple-gradient {
+  background-image:  linear-gradient(to bottom, rgba(188, 156, 255,0.5) 0%,
+  rgba(139, 164, 249,0.5) 100%);
+}
+
+.btn__text-link__color_purple {
+  max-width: 95px;
+  color: $color_purple;
+  &:hover, &:focus {
+    color: $color_shade50;
+  }
+}
+
+.btn__text-link__color_hover-focus {
+  color: $color_shade50;
+}
+
+.btn__long {
+position: relative;
+&:before {
+  left: 270px;
+  top: -1px;
+  @include material-icons;
+  @include icon-arrow;
+  z-index: 10;
+  content: "arrow_forward";
+  color: white;
+  }   
+}
