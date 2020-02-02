@@ -1,0 +1,62 @@
+@import "../colors.scss";
+@import "../fonts.scss";
+
+
+.pagination {
+	display: flex;
+	flex-direction: row;
+  max-width: 241px;
+  margin-bottom: 10px;
+  @include type__text_h3;
+  font-weight: normal;
+    &__item {
+      list-style: none; 
+    };
+    &__link {
+      display: block;
+      text-decoration: none;
+      line-height: 40px;
+      text-align: center;
+      width: 40px;
+      color: $color_shade50;
+      width: 40px;
+      height: 40px;
+        &:hover {
+          font-weight: bold;
+          color: white;
+          background: linear-gradient(to bottom, #6FCF97 0%, #66D2EA 100%);
+          border-radius: 22px;
+        };    
+    };
+    &__link_current {
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(to bottom, #BC9CFF 0%, #8BA4F9 100%);
+      border-radius: 22px;
+    };     
+    &__hellip {
+      display: block;
+      text-align: center;
+      color: $color_shade50;
+      width: 40px;
+      line-height: 40px;
+    };
+    &__link-next {
+      position: absolute;
+      &:before {
+        position: relative;
+        @include material-icons;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        content: "arrow_forward";
+        line-height: 40px;
+        width: 40px;
+        }   
+    }
+};
+
+.pagination-description {
+  color: $color_dark-shade75;
+}
+
