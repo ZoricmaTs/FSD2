@@ -11,12 +11,12 @@
 			<link rel="stylesheet" href="./form_elements/checkbox.scss" />
 			<link rel="stylesheet" href="./form_elements/radio-button.scss" />
 			<link rel="stylesheet" href="./form_elements/toggle.scss" />
-			<link rel="stylesheet" type="text/css" href="../css/form_elements.css">
-			<!--<link rel="stylesheet" href="../node_modules/air-datepicker/dist/css/datepicker.min.css" />
--->
-			<script src="../node_modules/jquery/dist/jquery.js" type="text/javacsript"></script>	
-			<script src="../node_modules/air-datepicker/dist/js/datepicker.min.js" type="text/javacsri
-			pt"></script>
+			<link rel="stylesheet" href="./form_elements/like-button.scss" />
+			
+			<link rel="stylesheet" type="text/css" href="../css/form_elements.css"/>
+			<!--<script src="../node_modules/jquery/dist/jquery.js" type="text/javacsript"></script>
+    <script src="import-jquery.js"></script>-->
+			
 		</head>	
 		<body>
 			<section class="logo">
@@ -150,7 +150,12 @@
 						<div class="form-element__check-button__heading">
 							<h3 class="type-text__h3-bold">like button</h3>
 						</div>
-						<div class="like-button" data-stage="false">
+
+						<button class="heart">
+							<span class="likes-number">2</span>
+						</button>
+						<script src="form_elements/like-button.js"></script>
+					<!--<div class="like-button" data-stage="false">
 							<div class="like-button__heart">
 								<i class="material-icons material-icons_size_small material-icons_color_light-shade">favorite_border</i>
 							</div>
@@ -161,7 +166,9 @@
 								<i class="material-icons material-icons_size_small material-icons_color_light-shade">favorite</i>
 							</div>
 							<span class="like-button__label">12</span>
-						</div>
+						</div>-->	
+
+
 					</div>
 					<div class="form-element__check-button rate-buttons">
 						<div class="form-element__check-button__heading">
