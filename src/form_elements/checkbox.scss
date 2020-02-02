@@ -37,8 +37,7 @@
       border: 1px solid #BC9CFF;
       box-sizing: border-box;
       border-radius: 4px;
-      }
-
+    }
     &__text {
       display: flex;
       flex-direction: column;
@@ -51,7 +50,6 @@
     &__text_color_shade50 {
       color: $color_shade50;
     }
-
     &__input:checked + &__box {
     fill: white;
     background: url("/checked.svg") center no-repeat;

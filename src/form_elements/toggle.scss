@@ -1,0 +1,65 @@
+@import "../colors.scss";
+@import "../fonts.scss";
+
+
+ //toggle-button
+//--------------------------------------------------------------
+
+.toggle {
+  max-width: 270px;
+}
+
+.toggle-button {
+  display: flex;
+  margin-bottom: 10px;
+  box-sizing: border-box; 
+  height: 100%;
+  box-sizing: inherit;
+  &__text {
+    padding-left: 10px;
+    line-height: 24px;
+    color: $color_dark-shade75;
+  }
+//toggle code begins!
+&__label {
+  background: white;
+  padding: 3px;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #BC9CFF;
+  input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+&__switch {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0fr 1fr 1fr;
+  transition: .2s;
+  cursor: pointer;
+  //ICYMI, pseudo elements are treated as grid items
+  &::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background:  rgba(31, 32, 65, 0.25);
+    grid-column: 2;
+    transition: background .2s;   
+  }
+}
+
+  input:checked {
+    + .toggle-button__switch {
+      grid-template-columns: 1fr 1fr 0fr; 
+      &::after {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      }
+    }
+  }
+}
