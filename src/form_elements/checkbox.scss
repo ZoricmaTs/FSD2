@@ -49,10 +49,12 @@
       display: flex;
       flex-direction: column;
       margin-left: 10px;
-      line-height: 18px;
+      line-height: 18px; 
     }
-  
-    &__text_normal {
+    &__text_color_dark-shade75 {
+      color: $color_dark-shade75;
+    }
+    &__text_color_shade50 {
       color: $color_shade50;
     }
 
