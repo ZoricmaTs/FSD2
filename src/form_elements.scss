@@ -1,6 +1,7 @@
 
 @import "colors.scss";
 @import "fonts.scss";
+@import "/form_elements/text-fields.scss";
 
 .form-elements {
   &__row {
@@ -19,114 +20,6 @@
     margin-bottom: 20px;
   };
 };
-
- //text field
-//--------------------------------------------------------------
-.text-field__input_focus {
-  outline: none;
-  color: $color_dark-shade75;
-  border: 1px solid $color_dark-shade75;
-};
-/*TODO поменять !default*/
-/*TODO сделать отдельно &__элемент !!*/
-@mixin input-form {
-    padding-left: 15px;
-    width: 100%;
-    line-height: 44px;
-    background: #FFFFFF;
-    color: $color_light-shade25;
-    border: 1px solid $color_light-shade25;
-    box-sizing: border-box;
-    border-radius: 4px;
-    text-overflow: ellipsis;
-     &:hover {
-      outline: none;
-      color: $color_dark-shade75;
-      border: 1px solid $color_dark-shade75;
-     };
-     &:focus {
-      outline: none;
-      color: $color_dark-shade75;
-      border: 1px solid $color_dark-shade75;
-     };
-  };
-
-  //dropdown 320px
-//--------------------------------------------------------------
-
-
-  //dropdown-date _min-width
-//--------------------------------------------------------------
-  .dropdown-dates {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 320px;
-  }
-
-  .dropdown-date__input {
-    position: relative;
-    max-width: 150px;
-      &:before {
-        left: 105px;
-        @include material-icons;
-        @include icon-arrow;
-        z-index: 10;
-        content: "keyboard_arrow_down";
-        color: $color_shade50;
-      }
-  }
-
-  .dropdown-date__input_min-width {
-    @extend .type__text_body;
-    @include input-form;
-    padding-right: 44px;
-    width: 150px;
-  }
-
-//filter-date-dropdown
-//--------------------------------------------------------------
-
-.filter-date-dropdown {
-position: relative;
-  &:before {
-    left: 220px;
-    top: 12px;
-    @include material-icons;
-    @include icon-arrow;
-    z-index: 10;
-    content: "keyboard_arrow_down";
-    color: $color_shade50;
-  }    
-}
-
-.filter-date-dropdown__input_width_266px {
-  padding-right: 44px;
-  @include input-form;
-  max-width: 266px;
-}
-
-//subscription__input
-//--------------------------------------------------------------
-.text-field-subscription__input {
-  position: relative;
-  &:before {
-    left: 220px;
-    @include material-icons;
-    @include icon-arrow;
-    z-index: 10;
-    content: "arrow_forward";
-    background: linear-gradient(to bottom, $color_purple 0%, #8BA4F9 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }   
-}
-
-.text-field-subscription__input_width_266px {
-  padding-right: 44px;
-  @include input-form;
-  max-width: 266px
-}
 
 //checkbox-buttons общие
 //--------------------------------------------------------------

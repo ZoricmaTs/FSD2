@@ -1,0 +1,54 @@
+@import "../colors.scss";
+@import "../fonts.scss";
+@import "text-fields.scss";
+
+
+
+  //dropdown-date _min-width
+//--------------------------------------------------------------
+.dropdown-dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.dropdown-date {
+  &__input_min-width {
+    @include input-form;
+    padding-right: 44px;
+    width: 150px;
+  }
+  &__input {
+  position: relative;
+    &:before {
+      left: 105px;
+      @include material-icons;
+      @include icon-arrow;
+      z-index: 10;
+      content: "keyboard_arrow_down";
+      color: $color_shade50;
+    }
+  }
+}
+
+//filter-date-dropdown
+//--------------------------------------------------------------
+
+.filter-date-dropdown {
+position: relative;
+  &:before {
+    left: 220px;
+    top: 15px;
+    @include material-icons;
+    @include icon-arrow;
+    z-index: 10;
+    content: "keyboard_arrow_down";
+    color: $color_shade50;
+  }
+  &__input_width_266px {
+    padding-right: 44px;
+    @include input-form;
+    max-width: 266px;
+  }    
+}

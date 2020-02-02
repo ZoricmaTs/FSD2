@@ -5,16 +5,16 @@
 .dropdown {
   position: relative;
   max-width: 320px;
+  &__field {
+    margin-bottom: 23px;
+  }
 }
-.dropdown__field {
-  margin-bottom: 23px;
-}
+
 .dropdown__select {
   position: relative;
   @include input-form;
-  
-  max-width: 320px;
   padding-right: 44px;
+  color: $color_dark-shade75;
     &::after {
       left: 273px;
       @include material-icons;
@@ -23,5 +23,4 @@
       content: "keyboard_arrow_down";
       color: $color_shade50;
     }
-
 }

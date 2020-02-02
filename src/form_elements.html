@@ -7,6 +7,7 @@
 			<link rel="stylesheet" href="./form_elements.scss" />
 			<link rel="stylesheet" href="./form_elements/text-fields.scss" />
 			<link rel="stylesheet" href="./form_elements/dropdown.scss" />
+			<link rel="stylesheet" href="./form_elements/date-dropdown.scss" />
 			<link rel="stylesheet" type="text/css" href="../css/form_elements.css">
 			<!--<link rel="stylesheet" href="../node_modules/air-datepicker/dist/css/datepicker.min.css" />
 -->
@@ -24,27 +25,27 @@
 						<label class="form-element__heading text-field__label">
 							<h3 class="type-text__h3-bold">Text Field</h3>
 						</label>
-						<input class="form-element__input text-field__input type__text_body" type="email" name="input-email" placeholder="Email">
+						<input class="form-element__input text-field__input type-text__body_normal" type="email" name="input-email" placeholder="Email">
 					</div>
 					<div class="form-element__field text-field">
 						<label class="form-element__heading text-field__label">
 							<h3 class="type-text__h3-bold">Text Field</h3> 
 						</label>
-						<input class="form-element__input text-field__input text-field__input_focus type__text_body" type="email" name="input-email" placeholder="This is pretty awesome">
+						<input class="form-element__input text-field__input text-field__input_focus type-text__body_normal" type="email" name="input-email" placeholder="This is pretty awesome">
 					</div>
 					<div class="form-element__field dropdown">
 						<div class="form-element__heading dropdown__heading">
 							<h3 class="type-text__h3-bold">dropdown</h3>
 						</div>
 						<section class="dropdown__field">		
-							<div class="dropdown__select type__text_body">сколько гостей</div>
+							<div class="dropdown__select type-text__body_normal">сколько гостей</div>
 						</section>
 					</div>
 					<div class="form-element__field text-field">
 						<label class="form-element__heading text-field__label">
 							<h3 class="type-text__h3-bold">masked text field</h3>
 						</label>
-						<input class="form-element__input text-field__input type__text_body" type="text" name="input-date" placeholder="ДД.ММ.ГГГГ">
+						<input class="form-element__input text-field__input type-text__body_normal" type="text" name="input-date" placeholder="ДД.ММ.ГГГГ">
 					</div>
 					<div class="form-element__field dropdown-dates">
 						<div class="dropdown-date">
@@ -52,7 +53,7 @@
 								<h3 class="type-text__h3-bold">date Dropdown</h3>
 							</div>
 							<div class="dropdown-date__input">
-								<input class="form-element__input dropdown-date__input_min-width type__text_body datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
+								<input class="form-element__input dropdown-date__input_min-width type-text__body_normal datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
 							</div>
 						</div>
 						<div class="dropdown-date">
@@ -60,7 +61,7 @@
 								<h3 class="type-text__h3-bold">date Dropdown</h3>
 							</div>
 							<div class="dropdown-date__input">
-								<input class="form-element__input dropdown-date__input_min-width type__text_body datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
+								<input class="form-element__input dropdown-date__input_min-width type-text__body_normal datepicker-here" type="text" name="input-date" placeholder="ДД.MM.ГГГГ" data-position="right top" >
 							</div>
 						</div>
 					</div>
@@ -69,7 +70,7 @@
 							<h3 class="type-text__h3-bold">filter date dropdown</h3>
 						</label>
 						<div class="filter-date-dropdown__input">
-							<input class="form-element__input filter-date-dropdown__input_width_266px type__text_body datepicker-here" type="text" name="input-date" placeholder="19 авг - 23 авг">
+							<input class="form-element__input filter-date-dropdown__input_width_266px type-text__body_normal datepicker-here" type="text" name="input-date" placeholder="19 авг - 23 авг">
 						</div>
 					</div>
 					<div class="form-element__field text-field-subscription text-field">
@@ -77,7 +78,7 @@
 							<h3 class="type-text__h3-bold">subscription text field</h3>
 						</label>
 						<div class="text-field-subscription__input">
-							<input class="form-element__input text-field-subscription__input_width_266px type__text_body" type="email" name="input-email" placeholder="Email">
+							<input class="form-element__input text-field-subscription__input_width_266px type-text__body_normal" type="email" name="input-email" placeholder="Email">
 						</div>
 					</div>
 				</article>
@@ -90,21 +91,21 @@
 							<input class="check__input" type="checkbox">
 							<span class="check__box"></span>
 							<div class="check__text">
-								<span class="type__text_body">Можно курить</span>	
+								<span class="type-text__body_normal">Можно курить</span>	
 							</div>				
 						</label>
 						<label class="check option-check">
 							<input class="check__input" type="checkbox" checked>
 							<span class="check__box"></span>
 							<div class="check__text">
-								<span class="type__text_body">Можно с питомцами</span>
+								<span class="type-text__body_normal">Можно с питомцами</span>
 							</div>
 						</label>
 						<label class="check option-check">
 							<input class="check__input" type="checkbox" checked>
 							<span class="check__box"></span>
 							<div class="check__text">
-								<span class="type__text_body">Можно пригласить гостей (до 10 человек)</span>	
+								<span class="type-text__body_normal">Можно пригласить гостей (до 10 человек)</span>	
 							</div>				
 						</label>	
 					</div>
@@ -115,11 +116,11 @@
 						<div class="radio-buttons">
 							<div class="radio-buttons-gender">
 								<input class="radio-buttons-gender__input" type="radio" id="male" name="gender" value="male" checked>
-								<label for="male" class="radio-buttons-gender__label type__text_body">Мужчина</label>
+								<label for="male" class="radio-buttons-gender__label type-text__body_normal">Мужчина</label>
 							</div>
 							<div class="radio-buttons-gender">
 								<input class="radio-buttons-gender__input" type="radio" id="female" name="gender" value="female">
-								<label for="female" class="radio-buttons-gender__label type__text_body">Женщина</label>
+								<label for="female" class="radio-buttons-gender__label type-text__body_normal">Женщина</label>
 							</div>
 						</div>
 					</div>
@@ -132,14 +133,14 @@
 								<input class="toggle-button__input" type="checkbox" name="subscription" id="subscription-field" checked />
 									<div class="toggle-button__switch"></div>
 							</label>
-							<span class="toggle-button__text type__text_body">Получать спецпредложения</span>
+							<span class="toggle-button__text type-text__body_normal">Получать спецпредложения</span>
 						</div>
 						<div class="toggle-button">
 							<label class="toggle-button__label" for="subscription-field">
 								<input class="toggle-button__input" type="checkbox" name="subscription" id="subscription-field" />
 								<div class="toggle-button__switch"></div>
 							</label>
-							<span class="toggle-button__text type__text_body">Получать спецпредложения</span>
+							<span class="toggle-button__text type-text__body_normal">Получать спецпредложения</span>
 						</div>
 					</div>
 					<div class="form-element__check-button like-buttons">
@@ -271,7 +272,7 @@
 								</a>
 							</li>
 						</ul>
-						<div class="pagination-description type__text_body"> 
+						<div class="pagination-description type-text__body_normal"> 
 							<span class="pagination-description__start-number">1</span>
 							<span class="pagination-description__text"> – </span>
 							<span class="pagination-description__end-number">12</span>
@@ -291,7 +292,7 @@
 						<input class="check__input" type="checkbox">
 						<span class="check__box"></span>
 						<div class="check__text">
-							<span class="check__text_bold type__text_body">Широкий коридор</span>
+							<span class="check__text_bold type-text__body_normal">Широкий коридор</span>
 							<span class="check__text_normal">Ширина коридоров в номере не менее 91 см.</span>
 						</div>						
 					</label>
@@ -299,7 +300,7 @@
 						<input class="check__input" type="checkbox">
 						<span class="check__box"></span>
 						<div class="check__text">
-							<span class="check__text_bold type__text_body">Помощник для инвалидов</span>	
+							<span class="check__text_bold type-text__body_normal">Помощник для инвалидов</span>	
 							<span class="check__text_normal">На 1 этаже вас встретит специалист  и проводит до номера.</span>
 						</div>								
 					</label>

@@ -139,43 +139,48 @@ font-size: 14px;
 }
 .type-text {
 	font-style: normal;
-	&__h1 {
-		font-family: Quicksand, "Open Sans", Arial, sans-serif;
-		font-size: 24px;
-	}
 	&__h1_bold {
+		font-family: Quicksand, "Open Sans", Arial, sans-serif;
 		font-weight: bold;
+		font-style: normal;
 	}
 	&__h1_normal {
+		font-family: Quicksand, "Open Sans", Arial, sans-serif;
 		font-weight: normal;
-	}
-	&__h2 {
-		font-family: Quicksand, "Open Sans", Arial, sans-serif;	
+		font-style: normal;
 	}
 	&__h2_bold {
+		font-family: Quicksand, "Open Sans", Arial, sans-serif;	
 		font-weight: bold;
+		font-style: normal;
 	}
 	&__h2_normal {
+		font-family: Quicksand, "Open Sans", Arial, sans-serif;	
 		font-weight: normal;
+		font-style: normal;
 	}
-	&__h3-bold {
+	&__h3-bold { /*кроме цвета */
 		font-family: Montserrat, Arial, Helvetica, sans-serif;
+		font-style: normal;
 		font-size: 12px;
+		line-height: 15px;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
 	&__h3-normal {
 		font-family: Montserrat, Arial, Helvetica, sans-serif;
+		font-style: normal;
 		font-size: 12px;
 		font-weight: normal;
 	}
-	&__body {
-		font-family: Montserrat, Arial, Helvetica, sans-serif;
-	}
 	&__body_bold {
+		font-family: Montserrat, Arial, Helvetica, sans-serif;
+		font-style: normal;
 		font-weight: bold;
 	}
 	&__body_normal {
+		font-family: Montserrat, Arial, Helvetica, sans-serif;
+		font-style: normal;
 		font-weight: normal;
 	}
 
