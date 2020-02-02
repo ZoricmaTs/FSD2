@@ -39,12 +39,15 @@
 position: relative;
   &:before {
     left: 220px;
-    top: 15px;
+    top: 20px;
     @include material-icons;
     @include icon-arrow;
     z-index: 10;
     content: "keyboard_arrow_down";
     color: $color_shade50;
+  }
+  &__label {
+    display: block;
   }
   &__input_width_266px {
     padding-right: 44px;

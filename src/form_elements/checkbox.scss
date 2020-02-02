@@ -1,4 +1,63 @@
 @import "../colors.scss";
 @import "../fonts.scss";
-@import "text-fields.scss";
 
+
+.checkbox-buttons {
+  min-width: 192px;
+  max-width: 266px;
+  border: 1px solid blue;
+}
+
+.form-elements__check-button {
+  max-width: 300px;
+}
+
+.form-element__check-button__heading {
+  margin-bottom: 16px;
+}
+//checkbox
+//--------------------------------------------------------------
+.option-check {
+  display: block;
+  margin-bottom: 13px;
+}
+
+.check {
+  padding-left: 20px;
+    &__input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: (0 0 0 0);
+    }
+
+    &__box {
+      position: absolute;
+      background: #FFFFFF;
+      margin-top: 0px;
+      margin-left: -20px;
+      /* Primary Color */
+      width: 20px;
+      height: 20px;
+      border: 1px solid #BC9CFF;
+      box-sizing: border-box;
+      border-radius: 4px;
+      }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      line-height: 18px;
+    }
+  
+    &__text_normal {
+      color: $color_shade50;
+    }
+
+    &__input:checked + &__box {
+    fill: white;
+    background: url("/checked.svg") center no-repeat;
+    }
+}
