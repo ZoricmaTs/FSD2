@@ -13,7 +13,6 @@
   }
   &__list-items {
     min-width: 266px;
-    border: 1px solid red;
     height: 44px;
     position: relative;
     padding-right: 44px;
@@ -25,18 +24,26 @@
       @include icon-arrow;
       z-index: 5;
       content: "keyboard_arrow_down";
-      color: red/*$color_shade50*/;
+      color: $color_shade50;
+    }
+    &:hover:before {
+      position: absolute;
+      left: 220px;
+      @include material-icons;
+      @include icon-arrow;
+      z-index: 5;
+      content: "keyboard_arrow_up";
+      color: $color_shade50;
     }
   }
 }
   
 .checkbox-buttons__list-item {
   position: absolute;
-
   z-index: 10;
   display: none;
 }
-.checkbox-buttons__list-items:hover .checkbox-buttons__list-ite {
+.checkbox-buttons__list-items:hover .checkbox-buttons__list-item {
   display: block;
 }
 //checkbox
