@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAEA,GACE","file":"src.f7cdb23c.css","sourceRoot":"..\\src","sourcesContent":["$red: #e74c3c;\r\n\r\nh1 {\r\n  color: $red;\r\n}"]}
