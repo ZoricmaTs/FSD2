@@ -166,7 +166,6 @@ font-size: 14px;
 		line-height: 15px;
 		font-weight: bold;
 		text-transform: uppercase;
-		color: $color_dark-shade100;
 	}
 	&__h3-normal {
 		font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -199,10 +198,10 @@ font-size: 14px;
 	&__size_24 {
 		font-size: 24px;
 	}
-	/*&__color_dark-shade100 {
+	&__color_dark-shade100 {
 		color: $color_dark-shade100;
 	}
-	&__color_dark-shade75 {
+	/*&__color_dark-shade75 {
 		color: $color_dark-shade75;
 	}
 	&__color_shade50 {

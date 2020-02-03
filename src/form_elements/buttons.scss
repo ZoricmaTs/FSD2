@@ -1,52 +1,47 @@
 @import "../colors.scss";
 @import "../fonts.scss";
 
-
 .btn {
   text-decoration: none;
   height: 44px;
+  &__high {
+    line-height: 40px;
+  }
+  &__low {
+    line-height: 30px;
+  }
+  &__short {
+    min-width: 95px;
+  }
+  &__long {
+    min-width: 316px;
+  }
 }
 
-.btn__high {
-  line-height: 40px;
-}
-.btn__low {
-  line-height: 30px;
-}
-
-.btn__short {
-  min-width: 95px;
-}
-
-.btn__long {
-  min-width: 316px;
-}
 
 .btn__color_purple-gradient {
-  
+  display: block;
+  position: relative;
+  z-index: 4;
 	background-image: linear-gradient(to bottom, #BC9CFF 0%, #8BA4F9 100%);
   box-sizing: border-box;
 	border-radius: 22px; /**/
-	display: block;
   padding: 2px; /*рамка */
-	position: relative;
-	z-index: 2;
     &:hover, &:focus {
       background-image:  linear-gradient(to bottom, rgba(188, 156, 255,0.5) 0%,
                                                rgba(139, 164, 249,0.5) 100%);
   }
 }
 
-.btn__text_color_white {  
+.btn__text_color_white { 
+  display: flex;
+	justify-content: center; 
   align-items: center;
   color: white;
-  line-height: 44px;
+  height: 43px;
 	/*внешний радиус*/
-	display: flex;
-	justify-content: center;
 	transition: background .5s ease;
 }
-
 
 .btn__color_white {
 	display: block;
@@ -63,13 +58,13 @@
 }
 
 .btn__text_color_purple {
-  align-items: center;
-  line-height: 41px;
-  background: white; /*разница между кнопками*/
-  color: #BC9CFF;
-	border-radius: 22px; 
-	display: flex;
+  display: flex;
 	justify-content: center;
+  align-items: center;
+  height: 40px;
+  background: white; /*разница между кнопками*/
+  color: $color_purple;
+  border-radius: 22px;
 	transition: background .5s ease;
 }
 
@@ -78,7 +73,7 @@
   background-image:  linear-gradient(to bottom, rgba(188, 156, 255,0.5) 0%,
   rgba(139, 164, 249,0.5) 100%);
 }
-
+//* кнопка ссылка без рамки
 .btn__text-link__color_purple {
   max-width: 95px;
   color: $color_purple;
