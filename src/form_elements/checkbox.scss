@@ -6,9 +6,39 @@
   min-width: 192px;
   max-width: 266px;
   border: 1px solid blue;
+  &__list_heading {
+  padding-top: 14px;
+  padding-bottom: 15px;
+
+  }
+  &__list-items {
+    min-width: 266px;
+    border: 1px solid red;
+    height: 44px;
+    position: relative;
+    padding-right: 44px;
+    cursor: pointer;
+    &:before {
+      position: absolute;
+      left: 220px;
+      @include material-icons;
+      @include icon-arrow;
+      z-index: 5;
+      content: "keyboard_arrow_down";
+      color: red/*$color_shade50*/;
+    }
+  }
 }
+  
+.checkbox-buttons__list-item {
+  position: absolute;
 
-
+  z-index: 10;
+  display: none;
+}
+.checkbox-buttons__list-items:hover .checkbox-buttons__list-ite {
+  display: block;
+}
 //checkbox
 //--------------------------------------------------------------
 .option-check {
@@ -64,3 +94,4 @@
     background: url("/checked.svg") center no-repeat;
     }
 }
+
