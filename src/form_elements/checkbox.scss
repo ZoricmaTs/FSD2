@@ -43,7 +43,7 @@
   z-index: 10;
   display: none;
 }
-.checkbox-buttons__list-items:hover .checkbox-buttons__list-item {
+.checkbox-buttons__list-items:hover > .checkbox-buttons__list-item {
   display: block;
 }
 //checkbox
