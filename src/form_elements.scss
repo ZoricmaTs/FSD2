@@ -7,10 +7,18 @@
   &__row {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      
     };
     &__fields {
-      border: 1px solid green;
-    };     
+      margin-left: 140px;
+    }; 
+    &__check-buttons {
+      margin-left: 140px;
+    }
+    &__buttons {
+      margin-left: 140px;
+    }  
 };
 .form-element {
   &__heading {
@@ -25,7 +33,6 @@
 //--------------------------------------------------------------
 
 .form-elements__check-buttons {
-  border: 1px solid green;
   min-width: 320px;
 }
 .form-elements__check-button {
@@ -39,7 +46,9 @@
   margin-bottom: 40px;
 }
 
-
+.form-element__check-button-row {
+  margin-bottom: 40px;
+}
 
 //* buttons------------------------------------------------------------------
 .form-element__button-text {
@@ -70,4 +79,15 @@
 .form-element__button-heading {
   margin-bottom: 15px;
 }
+.form-element__button-pagination-description {
+  margin-bottom: 40px;
+}
+
+/* 950px */
+@media only screen and (max-width: 950px) {
+  .form-elements__row {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
