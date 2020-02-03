@@ -1,7 +1,10 @@
 @import "../colors.scss";
 @import "../fonts.scss";
 
-
+.form-element__check-button_heading{
+  display: flex;  
+  align-items: center;
+}
 .checkbox-buttons {
   min-width: 192px;
   max-width: 266px;
@@ -17,7 +20,7 @@
     position: relative;
     padding-right: 44px;
     cursor: pointer;
-    &:before {
+   /* &:before {
       position: absolute;
       left: 220px;
       @include material-icons;
@@ -25,8 +28,8 @@
       z-index: 5;
       content: "keyboard_arrow_down";
       color: $color_shade50;
-    }
-    &:hover:before {
+    }*/
+    /*&:hover:before {
       position: absolute;
       left: 220px;
       @include material-icons;
@@ -34,8 +37,20 @@
       z-index: 5;
       content: "keyboard_arrow_up";
       color: $color_shade50;
-    }
+    }*/
   }
+}
+.material-icon__arrow_down {
+  position: absolute;
+  left: 220px; 
+  z-index: 5;  
+  color: $color_shade50;  
+}
+.material-icon__arrow_up {
+  position: absolute;
+  left: 220px; 
+  z-index: 5;
+  color: $color_shade50; 
 }
   
 .checkbox-buttons__list-item {
@@ -43,7 +58,11 @@
   z-index: 10;
   display: none;
 }
-.checkbox-buttons__list-items:hover > .checkbox-buttons__list-item {
+/*.checkbox-buttons__list-items:hover > .checkbox-buttons__list-item {
+  display: block;
+}*/
+
+.showblock{
   display: block;
 }
 //checkbox

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 	<html lang="ru">
 		<head>
-			<meta charset="utf-8">
-			<link rel="stylesheet" href="./colors.scss" />
-			<link rel="stylesheet" href="./fonts.scss" />		
-			<link rel="stylesheet" href="./form_elements.scss" />
+			<meta charset="utf-8"/>
+			<link href="./colors.scss" rel="stylesheet" />
+			<link href="./fonts.scss" rel="stylesheet" />		
+			<link href="./form_elements.scss"  rel="stylesheet"/>
 			<link rel="stylesheet" href="./form_elements/text-fields.scss" />
-			<link rel="stylesheet" href="./form_elements/dropdown.scss" />
+			<link rel="stylesheet" href="./form_elements/dropdown.scss"/>
 			<link rel="stylesheet" href="./form_elements/date-dropdown.scss" />
 			<link rel="stylesheet" href="./form_elements/checkbox.scss" />
 			<link rel="stylesheet" href="./form_elements/radio-button.scss" />
@@ -292,8 +292,12 @@
 			</section>
 			<section class="form-elements__row">
 				<div class="form-element__check-button checkbox-buttons__list">
-					<div class="form-element__check-button_heading checkbox-buttons__list-items">
-						<h3 class="checkbox-buttons__list_heading type-text__h3-bold type-text__color_dark-shade100">expandable checkbox list</h3>
+					<div class="checkbox-buttons__list-items">
+						<div class="form-element__check-button_heading">
+							<h3 class="checkbox-buttons__list_heading type-text__h3-bold type-text__color_dark-shade100">expandable checkbox list</h3>
+							<i class="material-icons material-icon__arrow_down">keyboard_arrow_down</i>
+							<i class="material-icons material-icon__arrow_up">keyboard_arrow_up</i>
+						</div>
 						<section class="checkbox-buttons__list-item">
 							<label class="check option-check">
 								<input class="check__input" type="checkbox">
@@ -355,6 +359,8 @@
 					</div>
 					
 				</div>
+
+				<script src="form_elements/expandable-list.js"></script>
 				<div class="form-element__check-button checkbox-buttons">
 					<div class="form-element__check-button_heading">
 						<h3 class="type-text__h3-bold type-text__color_dark-shade100">rich Checkbox Buttons</h3>
