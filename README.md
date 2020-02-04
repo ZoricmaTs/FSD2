@@ -1,14 +1,13 @@
 # FSD2
 Верстка UI-Kit по FIGMA
 
-##Развёртывание
+## Развёртывание
 ***
 Клонировать
 ```
 git clone https://github.com/ZoricmaTs/FSD2.git
 ```
 Установка
-***
 ```
 npm i
 ```
@@ -21,6 +20,7 @@ npm run dev
 npm run build
 ```
 
-##UI kit
-###[Form elements](https://zoricmats.github.io/FSD2/form_elements.html)
-###[Colors and types](https://zoricmats.github.io/FSD2/color_and_type.html)
+## UI kit
+***
+### [Form elements](https://zoricmats.github.io/FSD2/form_elements.html)
+### [Colors and types](https://zoricmats.github.io/FSD2/color_and_type.html)
