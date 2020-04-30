@@ -20,7 +20,7 @@
   "homepage": "https://github.com/ZoricmaTs/FSD2#readme",
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "pug": "^2.0.4",
     "sass": "^1.24.2"
   },
